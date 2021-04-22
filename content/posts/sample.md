@@ -7,4 +7,5 @@ images:
 tags:
   - untagged
 ---
-
+## スタート
+世界のはじまりだ
