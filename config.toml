@@ -1,5 +1,5 @@
 baseURL = "https://zunta-blog.netlify.app"
-title   = "Hello Friend NG"
+title   = "Zunta's Blog"
 languageCode = "en-us"
 theme = "hello-friend-ng"
 
@@ -61,7 +61,7 @@ disableHugoGeneratorInject = false
 
   # Home subtitle of the index page.
   #
-  homeSubtitle = "Zunta's Blog"
+  homeSubtitle = "share my way of life"
 
   # Set a background for the homepage
   # backgroundImage = "assets/images/background.jpg"
