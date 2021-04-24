@@ -1,4 +1,4 @@
-baseURL = "https://shimiko-blog.netlify.app"
+baseURL = "https://zunta-blog.netlify.app"
 title   = "Hello Friend NG"
 languageCode = "en-us"
 theme = "hello-friend-ng"
