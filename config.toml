@@ -1,5 +1,5 @@
 baseURL = "https://zunta-blog.netlify.app"
-title   = "Zunta's Blog"
+title   = "ズンタブログ"
 languageCode = "en-us"
 theme = "hello-friend-ng"
 
