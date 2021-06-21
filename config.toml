@@ -173,10 +173,6 @@ disableHugoGeneratorInject = false
     name       = "ずんたとは"
     url        = "about/"
   [[menu.main]]
-    identifier = "mission"
-    name       = "使命"
-    url        = "mission/"
-  [[menu.main]]
     identifier = "posts"
     name       = "記事"
     url        = "posts/"
