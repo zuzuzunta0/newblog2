@@ -174,7 +174,7 @@ disableHugoGeneratorInject = false
     url        = "about/"
   [[menu.main]]
     identifier = "mission"
-    name       = "しめい"
+    name       = "使命"
     url        = "mission/"
   [[menu.main]]
     identifier = "posts"
