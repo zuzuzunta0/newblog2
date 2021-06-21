@@ -182,5 +182,5 @@ disableHugoGeneratorInject = false
     url        = "posts/"
   [[menu.main]]
     identifier = "portfolio"
-    name       = "作ったもの"
+    name       = "作品"
     url        = "portfolio/"
