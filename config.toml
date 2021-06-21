@@ -150,6 +150,10 @@ disableHugoGeneratorInject = false
   [[params.social]]
     name = "github"
     url  = "https://github.com/zuzuzunta0"
+    
+  [[params.social]]
+    name = "youtube"
+    url  = "https://www.youtube.com/channel/UCA8lNlGtZC0EikQpNYaqiNg"
 
 
 [languages]
