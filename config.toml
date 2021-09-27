@@ -117,6 +117,8 @@ disableHugoGeneratorInject = false
     logoMark     = ""
     logoText     = "ずんブロ"
     logoHomeLink = ""
+    path = "/static/img/zunta-header-logo.svg"
+    alt = "zunta-header-logo.svg"
     # Set true to remove the logo cursor entirely.
     # logoCursorDisabled = false
     # Set to a valid CSS color to change the cursor in the logo.
