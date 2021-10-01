@@ -184,5 +184,5 @@ disableHugoGeneratorInject = false
     url        = "portfolio/"
   [[menu.main]]
     indetifier = "forms"
-    name       = "お問い合わせ"
+    name       = "問い合わせ"
     url        = "forms/"
