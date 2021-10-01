@@ -174,16 +174,19 @@ disableHugoGeneratorInject = false
     identifier = "about"
     name       = "ずんたとは"
     url        = "about/"
+    weight     = 1
   [[menu.main]]
     identifier = "posts"
     name       = "記事"
     url        = "posts/"
+    weight     = 2
   [[menu.main]]
     identifier = "portfolio"
     name       = "作品"
     url        = "portfolio/"
-    weight     = -110
+    weight     = 3
   [[menu.main]]
     indetifier = "forms"
     name       = "問い合わせ"
     url        = "forms/"
+    weight     = 4
