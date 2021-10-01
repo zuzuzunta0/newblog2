@@ -182,3 +182,7 @@ disableHugoGeneratorInject = false
     identifier = "portfolio"
     name       = "作品"
     url        = "portfolio/"
+  [[menu.main]]
+    indetifier = "forms"
+    name       = "お問い合わせ"
+    url        = "forms/"
