@@ -1,4 +1,7 @@
 <head>
+  {{ range .Site.Params.customCSS }}
+<link rel="stylesheet" href="{{ . | absURL}}">
+{{ end }}
 </head>
 <body>
   <div class="container">
