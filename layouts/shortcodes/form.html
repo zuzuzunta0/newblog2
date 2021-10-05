@@ -1,26 +1,26 @@
-<form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="HelloHoney">
-  <input type="hidden" name="form-name" value="contact-form">
-  <input type="hidden" name="HelloHoney">
-  <div class="flexbox">
-    <div>
-      <label for="name">お名前: </label>
-      <span>
-        <input type="text" name="name" size="40" autocomplete="name"/>
-        <p class="not-valid" style="display:none"></p>
-      </span>
-      <label>E-Mail: <input type="email" name="email" /></label>
-      <span>
-        <input type="email" name="email" size="40" autocomplete="email" />
-        <p class="not-valid" style="display:none"></p>
-      </span>
-    </div>
-    <div>
-      <label for="message">内容: </label>
-      <span>
-        <textarea name="message" cols="41" rows="11">undefined</textarea>
-        <p class="not-valid" style="display:none"></p>
-      </span>
-    </div>
+<head>
+</head>
+<body>
+  <div class="container">
+    <form name="contact" method="POST" data-netlify="true">
+      <div class="half">
+        <div class="item">
+          <label for="name">名前</label>
+          <input type="text" id = "name">
+        </div>
+        <div class="item">
+          <label for="email">メール</label>
+          <input type="text" id = "email">
+        </div>
+      </div>
+      <div class="full">
+        <label for="message">内容</label>
+        <textarea name="" id = "message"></textarea>
+      </div>
+      <div class="action">
+        <input type="submit" value = "送信">
+      </div>
+    </form>
   </div>
-    <button type="submit" disabled class="btn">送信</button>
-</form>
+
+  </body>
