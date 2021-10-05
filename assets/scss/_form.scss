@@ -1,0 +1,18 @@
+form {
+  margin-top: 5%;
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type="hidden"] {
+  display: none;
+  appearance: none;
+  background-color:initial;
+  cursor: default;
+  padding: initial;
+  border: initial;
+}
+
