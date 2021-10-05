@@ -93,7 +93,7 @@ disableHugoGeneratorInject = false
   # Integrate Javascript files or stylesheets by adding the url to the external assets or by
   # linking local files with their path relative to the static folder, e.g. "css/styles.css"
   #
-  customCSS = ["static/css/custom.css","assets/_footer.scss"]
+  customCSS = ["static/css/custom.css","assets/_footer.scss","assets/_form.scss"]
   customJS  = []
 
   # Toggle this option need to rebuild SCSS, requires extended version of Hugo
