@@ -1,5 +1,5 @@
 ---
-title: "SetInterval"
+title: "Chrome拡張機能を作成中に、Content Security Policyに違反しているとエラーが出た"
 date: 2021-10-23T18:03:49+09:00
 draft: false
 toc: false
@@ -7,17 +7,32 @@ images:
 tags:
   - untagged
 ---
-
-# Chrome拡張機能を作成中に、Content Security Policyに違反しているとエラーが出た
-
-## 背景
-
-## エラー内容
-
-##　どのように解決したか
+## エラー文
+> Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'self'".
 
 
-新規タブを開いたときにJavaScriptで時計をHTML上に表示させるこーどを書いてみた結果、
+## 解決策
+setIntervalの文の書き方を変えたら治った。
+
+NG例
+setInterval('showClock()', 1000);
+
+OK例
+setInterval(function(){showClock()}, 1000);
+
+
+## なぜこのエラーにたどり着いたか
+### 作りたかったもの
+[Chrome Extensions: New Tab Override - Programming with Text](https://youtu.be/vNb3P5KIxXw)
+このリンクにある動画にある通り、
+Chromeで新規タブを開いたときに、JavaScriptで動く時計をHTML上に表示させたかった。
+
+そこでネットからテキトーに[引っ張ってきたコード](https://qumeru.com/magazine/362)をそのまま貼り付けた。
+
+## どのように解決したか
+
+
+
 
 setIntervalの文がChrome拡張機能の
 Content Security Policyに違反しているとのエラーが出た。
