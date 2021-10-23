@@ -1,14 +1,22 @@
 ---
 title: "SetInterval"
 date: 2021-10-23T18:03:49+09:00
-draft: true
+draft: false
 toc: false
 images:
 tags:
   - untagged
 ---
 
-Chrome拡張機能作成で、
+# Chrome拡張機能を作成中に、Content Security Policyに違反しているとエラーが出た
+
+## 背景
+
+## エラー内容
+
+##　どのように解決したか
+
+
 新規タブを開いたときにJavaScriptで時計をHTML上に表示させるこーどを書いてみた結果、
 
 setIntervalの文がChrome拡張機能の
