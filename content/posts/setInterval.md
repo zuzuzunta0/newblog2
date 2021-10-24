@@ -12,14 +12,19 @@ tags:
 
 
 ## 解決策
-setIntervalの文の書き方を変えたら治った。
+setIntervalメソッドの第一引数を文字列ではなく、関数として読み込んだ。
 
 NG例
+```JavaScript
 setInterval('showClock()', 1000);
-
+```
 OK例
+```JavaScript
 setInterval(function(){showClock()}, 1000);
+```
 
+[MDN Web Docs](https://developer.mozilla.org/ja/docs/Web/API/setInterval)
+によると、setIntervalメソッドの第一引数
 
 ## なぜこのエラーにたどり着いたか
 ### 作りたかったもの
