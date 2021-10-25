@@ -7,13 +7,27 @@ images:
 tags:
   - untagged
 ---
+
+<!--掛け合わせ3つの狙うキーワード-->
+Chrome拡張機能　JavaScript　error
+
+<!--リード文（権威・読者の不安を解消、安心させる・）-->
+  <!--この記事を読む人の悩みの状況に共感する：　　Chrome拡張機能を作っているときに、Content Security Policyのエラーに引っかかって解決できない-->
+    
+  <!--この記事を読むことで何を得られるか、どんな価値が生まれるか：Content Security Policyのunsafe-evalの意味が何となくわかる-->
+
+<!--この記事の根拠または信頼性：エンジニアではない私でも理解できた-->
+
 ## エラー文
 > Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'self'".
 
-
+<!--結論-->
 ## 解決策
 setIntervalメソッドの第一引数を文字列ではなく、関数として読み込んだ。
 
+<!--理由-->
+
+<!--具体例-->
 NG例
 ```JavaScript
 setInterval('showClock()', 1000);
