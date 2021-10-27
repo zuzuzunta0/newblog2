@@ -87,7 +87,7 @@ setInterval(function(){showClock()}, 1000);
 #### 改善前後の全体文
 
 ![setInterval code img](https://user-images.githubusercontent.com/64098050/138999282-cc327f11-411f-47ea-9ce9-db2ff03e5f76.PNG)
-
+<!-- 
 
 [MDN Web Docs](https://developer.mozilla.org/ja/docs/Web/API/setInterval)
 によると、setIntervalメソッドの第一引数
@@ -106,5 +106,5 @@ setIntervalの第一引数には”定義した関数の文字列”を入れて
 
 
 しかし、Chrome拡張機能の中で作る場合には、
-第一引数に”定義した関数の文字列”を入れるとunsafe-evalというエラーがでてしまう。
+第一引数に”定義した関数の文字列”を入れるとunsafe-evalというエラーがでてしまう。 -->
 
