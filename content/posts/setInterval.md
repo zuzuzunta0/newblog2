@@ -63,8 +63,15 @@ JavaScriptでデジタル時計を作ろうしていたらconsoleにこんなエ
 > Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'self'".
 
 <!-- エラー文要約 -->
+[こちら](https://kuroeveryday.blogspot.com/2015/06/ChromeExtensionsEvalError.html)にも書かれている通り、
 簡単に訳すと
-'unsafe-eval'は、次のコンテンツセキュリティポリシーディレクティブで許可されているスクリプトのソースではないため、文字列をJavaScriptとして評価することを拒否しました
+> 文字列からコードを生成するevalメソッドはGoogleのセキュリティ上、ダメですよ！
+
+私のコードの中で文字列から生成していたコードが以下。
+#### 改善前
+```JavaScript
+setInterval('showClock()', 1000);
+```
 <!--結論-->
 ## 解決策
 setIntervalメソッドの第一引数を文字列ではなく、関数として読み込んだ。
@@ -72,10 +79,7 @@ setIntervalメソッドの第一引数を文字列ではなく、関数として
 <!--理由-->
 
 <!--具体例-->
-#### 改善前
-```JavaScript
-setInterval('showClock()', 1000);
-```
+
 #### 改善後
 ```JavaScript
 setInterval(function(){showClock()}, 1000);
