@@ -1,5 +1,5 @@
 ---
-title: "Chrome拡張機能を作成中に、Content Security Policyに違反しているとエラーが出た"
+title: "【Chrome拡張機能】JavaScriptで時計を作っていたら、'unsafe-eval'で怒られた"
 date: 2021-10-23T18:03:49+09:00
 draft: false
 toc: false
@@ -10,9 +10,10 @@ tags:
 
 <!-- 記事設計項目 -->
 
+<!-- 伝えたいこと：Chrome拡張機能をつくるときにだけ、動かなくなるJavaScriptの文があるよ！！ -->
 
 　　<!-- ①掛け合わせ3つの狙うキーワード -->
-   <!-- Chrome拡張機能　JavaScript　error -->
+   <!-- Chrome拡張機能　JavaScript unsafe-eval -->
   
    <!-- ②ターゲット -->
    <!--  Chrome拡張機能をJavaScriptで作ろうとしてる人  -->
@@ -52,7 +53,13 @@ tags:
 
 <!--この記事の根拠または信頼性：エンジニアではない私でも理解できた-->
 
+
+
 ## エラー文
+
+Chromeで新規タブを開いたときに、
+JavaScriptでデジタル時計を作ろうしていたらconsoleにこんなエラーが表示されていました。
+
 > Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'self'".
 
 <!--結論-->
@@ -86,20 +93,6 @@ Chromeで新規タブを開いたときに、JavaScriptで動く時計をHTML上
 
 そこでネットからテキトーに[引っ張ってきたコード](https://qumeru.com/magazine/362)をそのまま貼り付けた。
 
-## どのように解決したか
-
-
-
-
-setIntervalの文がChrome拡張機能の
-Content Security Policyに違反しているとのエラーが出た。
-
-原因
-ネットからテキトーに引っ張ってきた
-setIntervalの構文の使用が原因
-
-だめな構文
-setInterval('showClock()', 1000); 
 
 setIntervalの第一引数には”定義した関数の文字列”を入れても関数を動かすことができるし、
 ”関数として直接functionを作ったもの”でも呼び込むことができる。
@@ -107,11 +100,4 @@ setIntervalの第一引数には”定義した関数の文字列”を入れて
 
 しかし、Chrome拡張機能の中で作る場合には、
 第一引数に”定義した関数の文字列”を入れるとunsafe-evalというエラーがでてしまう。
-セキュリティ上の理由でこの形の構文は許可できないらしい。
 
-正しい構文
-setInterval(function(){showClock()}, 1000); 
-Terms
-Privacy
-Security
-Status
