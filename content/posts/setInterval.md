@@ -4,8 +4,7 @@ date: 2021-10-23T18:03:49+09:00
 draft: false
 toc: false
 images:
-tags:
-  - untagged
+tags: ["Chrome", "JavaScript"]
 ---
 
 <!-- 記事設計項目 -->
