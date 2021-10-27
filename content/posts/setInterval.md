@@ -54,14 +54,17 @@ tags:
 <!--この記事の根拠または信頼性：エンジニアではない私でも理解できた-->
 
 
-
+<!-- エラー解説 -->
 ## エラー文
-
+<!-- エラーが出る直前までやろうとしていたこと -->
 Chromeで新規タブを開いたときに、
 JavaScriptでデジタル時計を作ろうしていたらconsoleにこんなエラーが表示されていました。
-
+<!-- エラー本文 -->
 > Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'self'".
 
+<!-- エラー文要約 -->
+簡単に訳すと
+'unsafe-eval'は、次のコンテンツセキュリティポリシーディレクティブで許可されているスクリプトのソースではないため、文字列をJavaScriptとして評価することを拒否しました
 <!--結論-->
 ## 解決策
 setIntervalメソッドの第一引数を文字列ではなく、関数として読み込んだ。
@@ -69,15 +72,15 @@ setIntervalメソッドの第一引数を文字列ではなく、関数として
 <!--理由-->
 
 <!--具体例-->
-### 改善前
+#### 改善前
 ```JavaScript
 setInterval('showClock()', 1000);
 ```
-### 改善後
+#### 改善後
 ```JavaScript
 setInterval(function(){showClock()}, 1000);
 ```
-### JavaScriptの全体文
+#### 改善前後の全体文
 
 ![setInterval code img](https://user-images.githubusercontent.com/64098050/138999282-cc327f11-411f-47ea-9ce9-db2ff03e5f76.PNG)
 
@@ -100,4 +103,6 @@ setIntervalの第一引数には”定義した関数の文字列”を入れて
 
 しかし、Chrome拡張機能の中で作る場合には、
 第一引数に”定義した関数の文字列”を入れるとunsafe-evalというエラーがでてしまう。
+
+{{< youtube vNb3P5KIxXw >}}
 
