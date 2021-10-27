@@ -62,15 +62,16 @@ setIntervalメソッドの第一引数を文字列ではなく、関数として
 <!--理由-->
 
 <!--具体例-->
-改善前
+### 改善前
 ```JavaScript
 setInterval('showClock()', 1000);
 ```
-改善後
+### 改善後
 ```JavaScript
 setInterval(function(){showClock()}, 1000);
 ```
-JavaScriptの全体文
+### JavaScriptの全体文
+
 ![setInterval code img](https://user-images.githubusercontent.com/64098050/138999282-cc327f11-411f-47ea-9ce9-db2ff03e5f76.PNG)
 
 
