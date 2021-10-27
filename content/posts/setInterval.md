@@ -70,6 +70,8 @@ OK例
 ```JavaScript
 setInterval(function(){showClock()}, 1000);
 ```
+![setInterval code](https://user-images.githubusercontent.com/64098050/138996681-34a97e6e-1727-48d7-8ca9-c0f0ca468e8c.png)
+
 
 [MDN Web Docs](https://developer.mozilla.org/ja/docs/Web/API/setInterval)
 によると、setIntervalメソッドの第一引数
