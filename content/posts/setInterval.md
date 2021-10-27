@@ -70,7 +70,7 @@ setInterval('showClock()', 1000);
 ```JavaScript
 setInterval(function(){showClock()}, 1000);
 ```
-
+JavaScriptの全体文
 ![setInterval code img](https://user-images.githubusercontent.com/64098050/138999282-cc327f11-411f-47ea-9ce9-db2ff03e5f76.PNG)
 
 
