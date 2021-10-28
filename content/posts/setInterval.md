@@ -2,7 +2,7 @@
 title: "【Chrome拡張機能】JavaScriptで時計を作っていたら、'unsafe-eval'で怒られた"
 date: 2021-10-23T18:03:49+09:00
 draft: false
-toc: false
+toc: true
 images:
 tags: ["Chrome", "JavaScript"]
 ---
