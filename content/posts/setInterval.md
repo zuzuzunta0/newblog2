@@ -67,7 +67,7 @@ JavaScriptでデジタル時計を作ろうしていたらconsoleにこんなエ
 > 文字列からコードを生成するevalメソッドはGoogleのセキュリティ上、ダメですよ！
 
 私のコードの中で文字列から生成していたコードが以下。
-#### 改善前
+### 改善前
 ```JavaScript
 setInterval('showClock()', 1000);
 ```
@@ -79,11 +79,11 @@ setIntervalメソッドの第一引数を文字列ではなく、関数として
 
 <!--具体例-->
 
-#### 改善後
+### 改善後
 ```JavaScript
 setInterval(function(){showClock()}, 1000);
 ```
-#### 改善前後の全体文
+### 改善前後全文
 
 ![setInterval code img](https://user-images.githubusercontent.com/64098050/138999282-cc327f11-411f-47ea-9ce9-db2ff03e5f76.PNG)
 <!-- 
