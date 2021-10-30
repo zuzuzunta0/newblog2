@@ -1,0 +1,11 @@
+<div class="sidebar">
+  {{- if .IsPage -}}
+          {{ $enableTOC := .Params.toc | default .Site.Params.enableTOC -}}
+          {{- if $enableTOC -}}
+              <div class="sidebar-toc">
+                  <h4 class="sidebar-header">目次</h4>
+                  {{- .TableOfContents -}}
+              </div>
+          {{- end -}}
+      {{- end -}}
+</div>
