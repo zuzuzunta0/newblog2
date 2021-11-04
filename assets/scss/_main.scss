@@ -262,13 +262,16 @@ pre {
 }
 
 strong {
-  background:linear-gradient(transparent 85%, #d8c8a2 85%);
+  background:linear-gradient(transparent 85%, #ac924b 85%);
 }
 
 blockquote {
-  border-left: 3px solid #3eb0ef;
-  margin: 40px;
-  padding: 10px 20px;
+  position: relative;
+    padding: 10px 15px 10px 50px;
+    box-sizing: border-box;
+    font-style: italic;
+    border: 2px solid #516b3f;
+    color: #e9e9e9;
 
   @media #{$media-size-phone} {
     margin: 10px;
@@ -276,14 +279,28 @@ blockquote {
   }
 
   &:before {
-    content: "”";
-    font-family: Georgia, serif;
-    font-display: auto;
-    font-size: 3.875rem;
+    display: inline-block;
     position: absolute;
-    left: -40px;
-    top: -20px;
+    top: 10px;
+    left: 0;
+    content: "“";
+    font-family: sans-serif;
+    color: #6a924d;
+    font-size: 90px;
+    line-height: 1;
   }
+  p {
+    padding: 0;
+    margin: 10px 0;
+    line-height: 1.7;
+  }
+
+  & cite {
+    display: block;
+    text-align: right;
+    color: #888888;
+    font-size: 0.9em;
+}
 
   p:first-of-type {
     margin-top: 0;
