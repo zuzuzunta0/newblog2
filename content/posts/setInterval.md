@@ -2,7 +2,7 @@
 title: "【Chrome拡張機能】JavaScriptで時計を作っていたら、'unsafe-eval'で怒られた"
 date: 2021-10-23T18:03:49+09:00
 draft: false
-toc: true
+toc: false
 images:
 tags: ["Chrome", "JavaScript"]
 ---
@@ -11,8 +11,8 @@ tags: ["Chrome", "JavaScript"]
 
 <!-- 伝えたいこと：Chrome拡張機能をつくるときにだけ、動かなくなるJavaScriptの文があるよ！！ -->
 
-　　<!-- ①掛け合わせ3つの狙うキーワード -->
-   <!-- Chrome拡張機能　JavaScript unsafe-eval -->
+<!-- ①掛け合わせ3つの狙うキーワード -->
+   <!-- Chrome拡張機能 JavaScript unsafe-eval -->
   
    <!-- ②ターゲット -->
    <!--  Chrome拡張機能をJavaScriptで作ろうとしてる人  -->
@@ -51,7 +51,6 @@ tags: ["Chrome", "JavaScript"]
   <!--この記事を読むことで何を得られるか、どんな価値が生まれるか：Content Security Policyのunsafe-evalの意味が何となくわかる-->
 
 <!--この記事の根拠または信頼性：エンジニアではない私でも理解できた-->
-
 
 
 
