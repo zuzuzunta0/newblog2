@@ -88,9 +88,11 @@ setInterval('showClock()', 1000);
 ```JavaScript
 setInterval(function(){showClock()}, 1000);
 ```
+
+
 ### 改善前後全文
 
-[GitHubのソースコード](https://github.com/zuzuzunta0/New-Tab-Clock/commit/1914e5949cbbc1811d35c648215ecabeefd59e89)
+{{<link url="https://github.com/zuzuzunta0/New-Tab-Clock/commit/" title="GitHubのソースコード">}}
 
 ![setInterval code img](https://user-images.githubusercontent.com/64098050/138999282-cc327f11-411f-47ea-9ce9-db2ff03e5f76.PNG)
 

@@ -1,0 +1,14 @@
+<!-- 参照URL: 
+(Hugoのショートコードの作り方)
+https://qiita.com/mzmz__02/items/8ee69cfbc08d7cfd2735 
+
+(target blankのセキュリティ対策)
+https://blog.chick-p.work/hugo-shortcode/     
+-->
+
+{{- $url := .Get "url" -}}
+{{- if not $url -}}
+  {{ errorf "missing value for param 'url': ％s" .Position }}
+{{- end -}}
+
+<a href="{{ $url }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i>{{ .Get "title" }}</a>
