@@ -53,6 +53,11 @@ tags: ["Chrome", "JavaScript"]
 <!--この記事の根拠または信頼性：エンジニアではない私でも理解できた-->
 
 
+
+
+
+
+
 <!-- エラー解説 -->
 ## エラー文
 <!-- エラーが出る直前までやろうとしていたこと -->
@@ -66,14 +71,14 @@ JavaScriptでデジタル時計を作ろうしていたらconsoleにこんなエ
 簡単に訳すと
 > 文字列からコードを生成するevalメソッドはGoogleのセキュリティ上、ダメですよ！
 
-私のコードの中で文字列から生成していたコードが以下。
+<!--結論-->
+## 解決策
+setIntervalメソッドの第一引数を文字列ではなく、関数として読み込んだ。  
+私がコードの中で文字列から生成していたコードが以下。
 ### 改善前
 ```JavaScript
 setInterval('showClock()', 1000);
 ```
-<!--結論-->
-## 解決策
-setIntervalメソッドの第一引数を文字列ではなく、関数として読み込んだ。
 
 <!--理由-->
 
@@ -85,7 +90,14 @@ setInterval(function(){showClock()}, 1000);
 ```
 ### 改善前後全文
 
+[GitHubのソースコード](https://github.com/zuzuzunta0/New-Tab-Clock/commit/1914e5949cbbc1811d35c648215ecabeefd59e89)
+
 ![setInterval code img](https://user-images.githubusercontent.com/64098050/138999282-cc327f11-411f-47ea-9ce9-db2ff03e5f76.PNG)
+
+
+
+
+
 <!-- 
 
 [MDN Web Docs](https://developer.mozilla.org/ja/docs/Web/API/setInterval)
