@@ -1,0 +1,39 @@
+<style>
+  .boxlight {
+  background: #a9a9b3;/*背景色*/
+  box-shadow: 0px 0px 0px 10px #a9a9b3;/*線の外側*/
+  padding: 0.5em 0.5em 0.5em 2em;/*ボックス内の余白*/
+  margin: 40px;
+  padding: 5px;
+  border: double 10px #212020;/*線の種類 太さ 色*/
+  color: #212020;
+  }
+  .boxlight ul {
+    list-style-type: none;
+  }
+  .boxlight li {
+  margin: 5px;
+  }
+  .boxlight li i {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 8px;
+  }
+</style>
+<div class="boxlight">
+  <ul>
+    {{ with .Get "li1" }}
+    <li><i class="fas fa-check"></i>{{ . }}</li>
+    {{ end }}
+    {{ with .Get "li2" }}
+    <li><i class="fas fa-check"></i>{{ . }}</li>
+    {{ end }}{{ with .Get "li3" }}
+    <li><i class="fas fa-check"></i>{{ . }}</li>
+    {{ end }}{{ with .Get "li4" }}
+    <li><i class="fas fa-check"></i>{{ . }}</li>
+    {{ end }}
+    {{ with .Get "li5" }}
+    <li><i class="fas fa-check"></i>{{ . }}</li>
+    {{ end }}
+  </ul>
+</div>
