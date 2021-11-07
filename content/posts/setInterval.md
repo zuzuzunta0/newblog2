@@ -59,11 +59,12 @@ tags: ["Chrome", "JavaScript"]
 
 <!-- エラー解説 -->
 ## エラー文
+
 <!-- エラーが出る直前までやろうとしていたこと -->
 Chromeで新規タブを開いたときに、  
 JavaScriptで動くデジタル時計を表示させようとしていたら  
 時計がうごかず、、、  
-動かないgif
+動かないgif![JSclock-notwork](https://user-images.githubusercontent.com/64098050/140663893-48a6435b-c2e7-4e1a-9dcf-6076fc579583.gif)
 <!-- エラー本文 -->
 Chromeの画面で右クリック＞検証＞consoleタブ  
 にこんなエラーが表示されていました。
@@ -99,6 +100,8 @@ setInterval(function(){showClock()}, 1000);
 
 ![setInterval code img](https://user-images.githubusercontent.com/64098050/138999282-cc327f11-411f-47ea-9ce9-db2ff03e5f76.PNG)
 
+
+無事表示されました![JSclock-working](https://user-images.githubusercontent.com/64098050/140663917-21b44efe-7811-4941-9c09-824eed68d824.gif)
 
 
 
