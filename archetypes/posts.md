@@ -2,7 +2,6 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: true
-toc: false
 images:
 comments: true
 tags: ["", ""]
@@ -15,7 +14,7 @@ tags: ["", ""]
 
   <!-- ①掛け合わせ3つの狙うキーワード -->
   
-  <!-- ②ターゲット -->
+  <!-- ②読者像 -->
     
   <!-- ③読者の悩み -->
 

@@ -13,7 +13,7 @@ tags: ["Chrome", "JavaScript"]
 <!-- ①掛け合わせ3つの狙うキーワード -->
    <!-- Chrome拡張機能 JavaScript unsafe-eval -->
   
-   <!-- ②ターゲット -->
+   <!-- ②読者像 -->
    <!--  Chrome拡張機能をJavaScriptで作ろうとしてる人  -->
     
    <!-- ③読者の悩み -->
@@ -60,13 +60,17 @@ tags: ["Chrome", "JavaScript"]
 <!-- エラー解説 -->
 ## エラー文
 <!-- エラーが出る直前までやろうとしていたこと -->
-Chromeで新規タブを開いたときに、
-JavaScriptでデジタル時計を作ろうしていたらconsoleにこんなエラーが表示されていました。
+Chromeで新規タブを開いたときに、  
+JavaScriptで動くデジタル時計を表示させようとしていたら  
+時計がうごかず、、、  
+動かないgif
 <!-- エラー本文 -->
+Chromeの画面で右クリック＞検証＞consoleタブ  
+にこんなエラーが表示されていました。
 > Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src 'self'".
 
 <!-- エラー文要約 -->
-[こちら](https://kuroeveryday.blogspot.com/2015/06/ChromeExtensionsEvalError.html)にも書かれている通り、
+{{< link url="https://kuroeveryday.blogspot.com/2015/06/ChromeExtensionsEvalError.html" title="Chrome ExtensionsでUncaught EvalErrorになったときの対処法">}}にも書かれている通り、  
 簡単に訳すと
 > 文字列からコードを生成するevalメソッドはGoogleのセキュリティ上、ダメですよ！
 
