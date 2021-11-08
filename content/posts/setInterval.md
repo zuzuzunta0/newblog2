@@ -52,7 +52,7 @@ tags: ["Chrome", "JavaScript"]
 <!--この記事の根拠または信頼性：エンジニアではない私でも理解できた-->
 
 この記事を読むと以下のような価値が生まれます。 
-{{< list  li1="unsafe-evalの意味がわかる" li2="setInterval構文の正しい書き方がわかる" >}}
+{{< list  "unsafe-evalの意味がわかる" "setInterval構文の正しい書き方がわかる" >}}
 さっさと本文読んでほしいにゃ
 {{< toc >}}
 
