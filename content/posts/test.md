@@ -6,4 +6,4 @@ images:
 comments: true
 tags: ["", ""]
 ---
-{{< test  "unko" "chinko" >}}
+{{< code >}}
