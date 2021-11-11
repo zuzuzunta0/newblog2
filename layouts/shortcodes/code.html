@@ -6,8 +6,11 @@
   padding-bottom: 40px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  width: 700px;
+  width: auto;
   margin: 0 auto;
+  /* アコーディオン */
+  height: 0;
+  opacity: 0;
   transition: .5s;
   visibility: hidden;
   }
@@ -64,23 +67,34 @@ input[name="tab_item"] {
   display: none;
 }
 .acd-label{
-  background: #333;
-  color: #fff;
+  font-weight: bold;
   display: block;
   margin-bottom: 1px;
   padding: 10px;
 }
 
-.acd-check:checked + .tabs{
-  height: 100px;
-  opacity: 1;
-  padding: 10px;
-  visibility: visible;
+/* アイコン */
+.acd-label{
+  
 }
 
+.acd-content{
+  border: 1px solid #333;
+  height: 0;
+  opacity: 0;
+  padding: 0 10px;
+  transition: .5s;
+}
+.acd-check:checked + .acd-label + .tabs{
+  height: 500px;
+  opacity: 1;
+  visibility: visible;
+}
 </style>
+<!-- アコーディオン表示非表示切り替え -->
 <input id="acd-check1" class="acd-check" type="checkbox">
 <label class="acd-label" for="acd-check1">クリックで開く1</label>
+<!-- タブ切り替えメニュー -->
 <div class="tabs">
   <input id="all" type="radio" name="tab_item" checked>
   <label class="tab_item" for="all">総合</label>
