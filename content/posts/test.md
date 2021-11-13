@@ -6,4 +6,4 @@ images:
 comments: true
 tags: ["", ""]
 ---
-{{< code >}}
+{{< code "JavaScript" "CSS" "HTML">}}
