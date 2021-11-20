@@ -6,4 +6,6 @@ images:
 comments: true
 tags: ["", ""]
 ---
+
+あ  
 {{< code "JavaScript" "CSS" "HTML">}}
