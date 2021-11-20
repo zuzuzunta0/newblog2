@@ -6,4 +6,6 @@ images:
 comments: true
 tags: ["", ""]
 ---
-{{< test  "unko" "chinko" >}}
+
+あ  
+{{< code "JavaScript" "CSS" "HTML">}}

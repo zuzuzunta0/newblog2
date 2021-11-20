@@ -1,0 +1,131 @@
+<!-- 参照URL：https://bagelee.com/design/css/create_tabs_using_only_css/ -->
+<style>
+  /*タブ切り替え全体のスタイル*/
+.tabs {
+  margin-top: 50px;
+  padding-bottom: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: auto;
+  margin: 0 auto;
+  /* アコーディオン */
+  height: 0;
+  opacity: 0;
+  transition: .5s;
+  visibility: hidden;
+  }
+  
+
+/*タブのスタイル*/
+.tab_item {
+  width: calc(100%/3);
+  height: 50px;
+  border-bottom: 3px solid burlywood;
+  background-color: #d9d9d9;
+  line-height: 50px;
+  font-size: 16px;
+  text-align: center;
+  color: #565656;
+  display: block;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+.tab_item:hover {
+  opacity: 0.75;
+}
+
+/*ラジオボタンを全て消す*/
+input[name="tab_item"] {
+  display: none;
+}
+
+/*タブ切り替えの中身のスタイル*/
+.tab_content {
+  display: none;
+  padding: 40px 40px 0;
+  clear: both;
+  overflow: hidden;
+}
+
+
+/*選択されているタブのコンテンツのみを表示*/
+#all:checked ~ #all_content,
+#programming:checked ~ #programming_content,
+#design:checked ~ #design_content {
+  display: block;
+}
+
+/*選択されているタブのスタイルを変える*/
+.tabs input:checked + .tab_item {
+  background-color: burlywood;
+  color: #fff;
+}
+  /* アコーディオン表示非表示切り替え */
+.acd-check{
+  display: none;
+}
+.acd-label{
+  font-weight: bold;
+  display: block;
+  margin-bottom: 1px;
+  padding: 10px;
+  position: relative;
+}
+
+/* 開閉アイコン */
+.acd-label:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f13a";
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+	transition: 0.2s;
+}
+
+.acd-check:checked + .acd-label:after {
+  transform: translateY(-50%) rotate(180deg);
+	transition: 0.2s;
+}
+/*  */
+.acd-content{
+  border: 1px solid #333;
+  height: 0;
+  opacity: 0;
+  padding: 0 10px;
+  transition: .5s;
+}
+.acd-check:checked + .acd-label + .tabs{
+  height: 300px;
+  opacity: 1;
+  visibility: visible;
+}
+</style>
+<!-- アコーディオン表示非表示切り替え -->
+<input id="acd-check1" class="acd-check" type="checkbox">
+<label class="acd-label" for="acd-check1">ソースコードを表示</label> <!-- タブ切り替えメニュー -->
+<div class="tabs">
+  <input id="all" type="radio" name="tab_item" checked>
+  <label class="tab_item" for="all">{{ with .Get 0 }}{{ . }}{{ end }}</label>
+  <input id="programming" type="radio" name="tab_item">
+  <label class="tab_item" for="programming">{{ with .Get 1 }}{{ . }}{{ end }}</label>
+  <input id="design" type="radio" name="tab_item">
+  <label class="tab_item" for="design">{{ with .Get 2 }}{{ . }}{{ end }}</label>
+  <div class="tab_content" id="all_content">
+    <div class="tab_content_description">
+      <p class="c-txtsp">総合の内容がここに入ります</p>
+    </div>
+  </div>
+  <div class="tab_content" id="programming_content">
+    <div class="tab_content_description">
+      <p class="c-txtsp">プログラミングの内容がここに入ります</p>
+    </div>
+  </div>
+  <div class="tab_content" id="design_content">
+    <div class="tab_content_description">
+      <p class="c-txtsp">デザインの内容がここに入ります</p>
+    </div>
+  </div>
+</div>
