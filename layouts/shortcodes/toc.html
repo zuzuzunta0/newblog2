@@ -15,11 +15,16 @@
     list-style-type: none;
     margin-bottom: 10px;
   }
+
+  nav#TableOfContents li ul{
+    margin-top: 5px;
+  }
+
   nav#TableOfContents a {
-  text-decoration: underline;
+  text-decoration: none;
   }
   nav#TableOfContents a:hover {
-  text-decoration: none;
+  text-decoration: underline;
   }
 /* // リストマーカーのFontAwsome指定 */
   nav#TableOfContents a::before {
@@ -46,6 +51,6 @@
 }
 </style>
 <div class="toc">
-  <span class="toc-title">目次</span>
+  <span class="toc-title">タップできるうんち</span>
   {{ .Page.TableOfContents }}
 </div>
