@@ -42,6 +42,12 @@ disableHugoGeneratorInject = false
 [blackfriday]
   hrefTargetBlank = true
 
+# .mdファイルに直接htmlコードを貼り付けても表示される為の設定
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [taxonomies]
   tag      = "tags"
   category = "categories"
