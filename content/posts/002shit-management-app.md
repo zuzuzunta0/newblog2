@@ -3,7 +3,8 @@ title: "AppSheetで非エンジニアがシフト確認アプリ作ってみた�
 date: 2021-12-19T09:56:45+09:00
 draft: true
 toc: false
-images:
+image: ["/img/002eyecatch1.png"]
+img: "/img/002eyecatch1.png"
 comments: true
 tags: ["", ""]
 ---
@@ -44,7 +45,7 @@ tags: ["", ""]
 
 <!---------
 -------------- ↑記事設計↑ ----------------------->
-![Untitled Diagram drawio](https://user-images.githubusercontent.com/64098050/147876203-3d22527b-8e29-459c-84c8-989e745fda39.png)
+{{< figure src="/img/002eyecatch1.png">}}
 [Icons8](https://icons8.jp/)
 {{< toc >}}
 <!-- 導入文⇨読者の悩み共感 -->

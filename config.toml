@@ -63,7 +63,7 @@ disableHugoGeneratorInject = false
   # 
   description = "ようこそすばらしい内向型の世界へ"
   keywords = ""
-  images = [""]
+  image = ["resources/_gen/images/eyecatch1.png"]
 
   # Home subtitle of the index page.
   #
