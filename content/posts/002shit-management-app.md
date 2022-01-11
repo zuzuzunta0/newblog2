@@ -1,12 +1,12 @@
 ---
 title: "AppSheetで非エンジニアがシフト確認アプリ作ってみた【AppSheet】"
 date: 2021-12-19T09:56:45+09:00
-draft: true
+draft: false
 toc: false
 image: ["/img/002eyecatch1.png"]
 img: "/img/002eyecatch1.png"
 comments: true
-tags: ["", ""]
+tags: ["AppSheet", "SpreadSheet"]
 ---
 
 <!----------------------- ↓記事設計↓ ----------------------->
@@ -28,7 +28,7 @@ tags: ["", ""]
   ・シフト表をスマホで確認したい
   -->
   <!-- ④悩みが解決する条件
-  
+  シフト表を自
    -->
 
   <!-- ⑤悩みの解決策 -->
@@ -49,15 +49,26 @@ tags: ["", ""]
 [Icons8](https://icons8.jp/)
 {{< toc >}}
 <!-- 導入文⇨読者の悩み共感 -->
-## シフト表、メンバー確認めんどくさくない？
-私がの勤務先のシフト表は、リーダーの方がエクセルで作っています。  
-縦軸に日付、横軸に所属スタッフの名前がズラーっと並んでいます。  
-こんな感じで⬇︎  
-今日のメンバーを自力で割り出そうとすると、それだけで日が暮れます！！  
-あぁ、うっっとおおしい！！  
+## このアプリでやりたいこと
+スプレッドシートのシフト表を、スマホから見やすくしたい。  
+そこでおすすめしたいのが「AppSheet」  
+スプレッドシートの中の情報を読み込んだスマホアプリが作れるので、  
+情報確認もとても簡単になりましたので、ご紹介します。
+## 実際のアプリ設計
+### スプレッドシート内で作るもの
+1. シフト表作る
+1. その日ごとの出勤する人を抜き出して、ひとつのセルにまとめ、それを並べる
+1. ひとつのセルにまとめた表を、関数を使って昨日・今日・明日のシートを別に作って抜き出す
 
-そこで作りました。
-エクセルの表を**スマホでパッと見られる方法**を。  
+### AppSheet内でつくるもの
+1. 昨日・今日・明日の3つのタブをつくる
+1. 3つのタブそれぞれに、読み込むスプレッドシートを指定する
+
+<!-- 背景↓ -->
+## なぜ私はAppSheetを選んだのか？
+スプレッドシートのスマホアプリが実際にありますが、  
+情報の確認がめんどくさい。
+
 ## そんなあなたに「シフタス」
 *シフト*の*ステータス*が見られるアプリ 
 なづけて「*シフタス*」 
@@ -82,12 +93,18 @@ tags: ["", ""]
 明日の出勤メンバーを把握することから始まります。  
 能力のバランスをみて、根回ししておくのも、素晴らしいリーダーの秘訣です。
 ## インストール方法
-### 「AppSheet」を自分のスマホにインストール
-iPhoneであれば、AppStoreから。Androidであれば
+### 「AppSheet」を自分のスマホにインストール  
+{{< figure src="/img/002appsheet.png" width="100px">}}
+iPhoneの方は、コチラ↓から。  
+<a href="https://apps.apple.com/us/app/appsheet/id732548900?itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 180px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1383264000&h=1f2e22540d169a038bdea2c889998a39" alt="Download on the App Store" style="border-radius: 13px; width: 250px; height: 83px;"></a>  
+Androidの方は、コチラ↓から。
 <a href='https://play.google.com/store/apps/details?id=x1Trackmaster.x1Trackmaster&hl=ja&gl=US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img width= "200" alt='Google Play で手に入れよう' src='https://play.google.com/intl/en_us/badges/static/images/badges/ja_badge_web_generic.png'/></a>
 
 ### URLを開く
+AppSheetがダウンロードできた状態で、  
+以下のURLを開くと、私の作ったシフト確認アプリが確認できます。
 
+https://www.appsheet.com/newshortcut/9739a17a-a4c5-4906-af20-cd8e5353a445
 ## 使い方
 *シフタス*は
 ### スプレッドシート側の操作
