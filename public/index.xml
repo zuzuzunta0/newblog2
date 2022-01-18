@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ずんたブログ</title>
+    <link>https://zunta-blog.netlify.app/</link>
+    <description>Recent content on ずんたブログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sun, 19 Dec 2021 09:56:45 +0900</lastBuildDate><atom:link href="https://zunta-blog.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ノーコードでシフト確認アプリ作る３ステップ【AppSheet】</title>
+      <link>https://zunta-blog.netlify.app/posts/2021/12/%E3%83%8E%E3%83%BC%E3%82%B3%E3%83%BC%E3%83%89%E3%81%A7%E3%82%B7%E3%83%95%E3%83%88%E7%A2%BA%E8%AA%8D%E3%82%A2%E3%83%97%E3%83%AA%E4%BD%9C%E3%82%8B%EF%BC%93%E3%82%B9%E3%83%86%E3%83%83%E3%83%97appsheet/</link>
+      <pubDate>Sun, 19 Dec 2021 09:56:45 +0900</pubDate>
+      
+      <guid>https://zunta-blog.netlify.app/posts/2021/12/%E3%83%8E%E3%83%BC%E3%82%B3%E3%83%BC%E3%83%89%E3%81%A7%E3%82%B7%E3%83%95%E3%83%88%E7%A2%BA%E8%AA%8D%E3%82%A2%E3%83%97%E3%83%AA%E4%BD%9C%E3%82%8B%EF%BC%93%E3%82%B9%E3%83%86%E3%83%83%E3%83%97appsheet/</guid>
+      <description>記事設計 伝えたいこと 掛け合わせ3つの狙うキーワード AppSheet 作り方
+読者像・読者の理解レベル アルバイトを動かす立場の人間, AppSheetの存在を知っていて、具体的に作り方を参考にしたい&amp;ndash;&amp;gt;
+読者の悩み ・シフト表を毎回たどって今日のメンバーを現すのが、いちいちめんどくさい ・シフト表をスマホで確認したい
+悩みが解決する条件 シフト表を自
+悩みの解決策   Icons8  nav#TableOfContents { background: #a9a9b3; box-shadow: 0px 0px 0px 10px #a9a9b3; padding: 0.5em 0.5em 0.5em 2em; margin: 40px; padding: 30px; border: solid 3px #212020; color: #212020; } nav#TableOfContents li { list-style-type: none; margin-bottom: 10px; } nav#TableOfContents li ul{ margin-top: 5px; } nav#TableOfContents a { text-decoration: none; } nav#TableOfContents a:hover { text-decoration: underline; } nav#TableOfContents a::before { content: &#39;\f2fe&#39;; font-family: &#34;</description>
+    </item>
+    
+    <item>
+      <title>【Chrome拡張機能】JavaScriptで時計を作っていたら、&#39;unsafe-eval&#39;で怒られた</title>
+      <link>https://zunta-blog.netlify.app/posts/2021/10/chrome%E6%8B%A1%E5%BC%B5%E6%A9%9F%E8%83%BDjavascript%E3%81%A7%E6%99%82%E8%A8%88%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%84%E3%81%9F%E3%82%89unsafe-eval%E3%81%A7%E6%80%92%E3%82%89%E3%82%8C%E3%81%9F/</link>
+      <pubDate>Sat, 23 Oct 2021 18:03:49 +0900</pubDate>
+      
+      <guid>https://zunta-blog.netlify.app/posts/2021/10/chrome%E6%8B%A1%E5%BC%B5%E6%A9%9F%E8%83%BDjavascript%E3%81%A7%E6%99%82%E8%A8%88%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%84%E3%81%9F%E3%82%89unsafe-eval%E3%81%A7%E6%80%92%E3%82%89%E3%82%8C%E3%81%9F/</guid>
+      <description>この記事を読むと以下のような価値が生まれます。  .boxlight { background: #a9a9b3; box-shadow: 0px 0px 0px 10px #a9a9b3; padding: 0.5em 0.5em 0.5em 2em; margin: 40px; padding: 5px; border: double 10px #212020; color: #212020; } .boxlight ul { list-style-type: none; } .boxlight li { margin: 5px; } .boxlight li i { font-size: 15px; font-weight: bold; margin: 8px; }   unsafe-evalの意味がわかる setInterval構文の正しい書き方がわかる   さっさと本文読んでほしいにゃ  nav#TableOfContents { background: #a9a9b3; box-shadow: 0px 0px 0px 10px #a9a9b3; padding: 0.</description>
+    </item>
+    
+    <item>
+      <title>お問い合わせ</title>
+      <link>https://zunta-blog.netlify.app/form/</link>
+      <pubDate>Thu, 30 Sep 2021 09:07:48 +0900</pubDate>
+      
+      <guid>https://zunta-blog.netlify.app/form/</guid>
+      <description>* { margin: 0px; padding: 0px; box-sizing: border-box; font-family: &#34;Source Sans Pro&#34;, sans-serif; text-decoration: none; color: white; } body { background: #212020; } form { background: #212020; width: 640px; margin: 50px auto; max-width: 97%; border-radius: 4px; padding: 55px 30px; } form .title h2 { letter-spacing: 6px; border-bottom: 1px solid white; display: inline-block; padding-bottom: 8px; margin-bottom: 32px; } form .half { display: flex; justify-content: space-between; } form .half .item { display: flex; flex-direction: column; margin-bottom: 24px; width: 48%; } form label { display: block; font-size: 13px; letter-spacing: 3.</description>
+    </item>
+    
+    <item>
+      <title>Bambinipv</title>
+      <link>https://zunta-blog.netlify.app/portfolio/bambinipv/</link>
+      <pubDate>Tue, 22 Jun 2021 22:56:26 +0900</pubDate>
+      
+      <guid>https://zunta-blog.netlify.app/portfolio/bambinipv/</guid>
+      <description>私が2021年当時「FIFA21」というサッカーゲームの、
+「プロクラブ」  a:hover { text-decoration: none; } というモード オンラインで11人が協力できる対戦モードで活動していました。
+「FV Bambini」というチームに所属して活動しており、
+主将から、
+「チームのプロモーションビデオ的なものを作ってくれないか」
+というオファーがありました。
+ビデオ作りの方針は私に任せていただく形でした。
+ビデオ作り初心者ながらも「Adobe AfterEffect」というソフト１本で作り上げました。
+仕事の合間を縫ってやり方を調べながら、というのもあり製作期間は１ヶ月にも及びました。
+主将には大変喜んでいただけて、特に個人個人の顔写真が遷移していくところや、
+最後のロゴのモーションなどに良い反応をいただけたので、
+作ってよかったなと思いました。
+自分の作ったもので、人に喜んでいただくことの素晴らしさを感じた体験でした。</description>
+    </item>
+    
+  </channel>
+</rss>

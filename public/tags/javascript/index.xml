@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JavaScript on ずんたブログ</title>
+    <link>https://zunta-blog.netlify.app/tags/javascript/</link>
+    <description>Recent content in JavaScript on ずんたブログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sat, 23 Oct 2021 18:03:49 +0900</lastBuildDate><atom:link href="https://zunta-blog.netlify.app/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【Chrome拡張機能】JavaScriptで時計を作っていたら、&#39;unsafe-eval&#39;で怒られた</title>
+      <link>https://zunta-blog.netlify.app/posts/2021/10/chrome%E6%8B%A1%E5%BC%B5%E6%A9%9F%E8%83%BDjavascript%E3%81%A7%E6%99%82%E8%A8%88%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%84%E3%81%9F%E3%82%89unsafe-eval%E3%81%A7%E6%80%92%E3%82%89%E3%82%8C%E3%81%9F/</link>
+      <pubDate>Sat, 23 Oct 2021 18:03:49 +0900</pubDate>
+      
+      <guid>https://zunta-blog.netlify.app/posts/2021/10/chrome%E6%8B%A1%E5%BC%B5%E6%A9%9F%E8%83%BDjavascript%E3%81%A7%E6%99%82%E8%A8%88%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%84%E3%81%9F%E3%82%89unsafe-eval%E3%81%A7%E6%80%92%E3%82%89%E3%82%8C%E3%81%9F/</guid>
+      <description>この記事を読むと以下のような価値が生まれます。  .boxlight { background: #a9a9b3; box-shadow: 0px 0px 0px 10px #a9a9b3; padding: 0.5em 0.5em 0.5em 2em; margin: 40px; padding: 5px; border: double 10px #212020; color: #212020; } .boxlight ul { list-style-type: none; } .boxlight li { margin: 5px; } .boxlight li i { font-size: 15px; font-weight: bold; margin: 8px; }   unsafe-evalの意味がわかる setInterval構文の正しい書き方がわかる   さっさと本文読んでほしいにゃ  nav#TableOfContents { background: #a9a9b3; box-shadow: 0px 0px 0px 10px #a9a9b3; padding: 0.</description>
+    </item>
+    
+  </channel>
+</rss>

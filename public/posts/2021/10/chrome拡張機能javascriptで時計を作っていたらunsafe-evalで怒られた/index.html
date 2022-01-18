@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Zunta ">
+<meta name="description" content="この記事を読むと以下のような価値が生まれます。  .boxlight { background: #a9a9b3; box-shadow: 0px 0px 0px 10px #a9a9b3; padding: 0.5em 0.5em 0.5em 2em; margin: 40px; padding: 5px; border: double 10px #212020; color: #212020; } .boxlight ul { list-style-type: none; } .boxlight li { margin: 5px; } .boxlight li i { font-size: 15px; font-weight: bold; margin: 8px; }   unsafe-evalの意味がわかる setInterval構文の正しい書き方がわかる   さっさと本文読んでほしいにゃ  nav#TableOfContents { background: #a9a9b3; box-shadow: 0px 0px 0px 10px #a9a9b3; padding: 0." />
+<meta name="keywords" content=", Chrome, JavaScript" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://zunta-blog.netlify.app/posts/2021/10/chrome%E6%8B%A1%E5%BC%B5%E6%A9%9F%E8%83%BDjavascript%E3%81%A7%E6%99%82%E8%A8%88%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%84%E3%81%9F%E3%82%89unsafe-eval%E3%81%A7%E6%80%92%E3%82%89%E3%82%8C%E3%81%9F/" />
+
+
+<meta property="og:title" content="【Chrome拡張機能】JavaScriptで時計を作っていたら、&#39;unsafe-eval&#39;で怒られた" />
+<meta property="og:description" content="この記事を読むと以下のような価値が生まれます。  .boxlight { background: #a9a9b3; box-shadow: 0px 0px 0px 10px #a9a9b3; padding: 0.5em 0.5em 0.5em 2em; margin: 40px; padding: 5px; border: double 10px #212020; color: #212020; } .boxlight ul { list-style-type: none; } .boxlight li { margin: 5px; } .boxlight li i { font-size: 15px; font-weight: bold; margin: 8px; }   unsafe-evalの意味がわかる setInterval構文の正しい書き方がわかる   さっさと本文読んでほしいにゃ  nav#TableOfContents { background: #a9a9b3; box-shadow: 0px 0px 0px 10px #a9a9b3; padding: 0." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://zunta-blog.netlify.app/posts/2021/10/chrome%E6%8B%A1%E5%BC%B5%E6%A9%9F%E8%83%BDjavascript%E3%81%A7%E6%99%82%E8%A8%88%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%84%E3%81%9F%E3%82%89unsafe-eval%E3%81%A7%E6%80%92%E3%82%89%E3%82%8C%E3%81%9F/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-10-23T18:03:49&#43;09:00" />
+<meta property="article:modified_time" content="2021-10-23T18:03:49&#43;09:00" />
+
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+
+<link rel="icon" href="https://zunta-blog.netlify.app/blog/static/images/favicon.ico"/>
+
+
+    <title>
+        
+            【Chrome拡張機能】JavaScriptで時計を作っていたら、&#39;unsafe-eval&#39;で怒られた :: ずんたブログ 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://zunta-blog.netlify.app/main.360c75b0381da954dd48b0867f89e30bc8d1441701b5840ad468ac1bb70700bf.css">
+
+
+    
+        <link rel="stylesheet" type="text/css" href="static/css/custom.css">
+    
+
+    
+        <link rel="stylesheet" type="text/css" href="assets/_footer.scss">
+    
+
+    
+        <link rel="stylesheet" type="text/css" href="assets/_form.scss">
+    
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://zunta-blog.netlify.app/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://zunta-blog.netlify.app/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://zunta-blog.netlify.app/favicon-16x16.png">
+<link rel="manifest" href="https://zunta-blog.netlify.app/site.webmanifest">
+
+
+
+<meta itemprop="name" content="【Chrome拡張機能】JavaScriptで時計を作っていたら、&#39;unsafe-eval&#39;で怒られた">
+<meta itemprop="description" content="この記事を読むと以下のような価値が生まれます。  .boxlight { background: #a9a9b3; box-shadow: 0px 0px 0px 10px #a9a9b3; padding: 0.5em 0.5em 0.5em 2em; margin: 40px; padding: 5px; border: double 10px #212020; color: #212020; } .boxlight ul { list-style-type: none; } .boxlight li { margin: 5px; } .boxlight li i { font-size: 15px; font-weight: bold; margin: 8px; }   unsafe-evalの意味がわかる setInterval構文の正しい書き方がわかる   さっさと本文読んでほしいにゃ  nav#TableOfContents { background: #a9a9b3; box-shadow: 0px 0px 0px 10px #a9a9b3; padding: 0."><meta itemprop="datePublished" content="2021-10-23T18:03:49&#43;09:00" />
+<meta itemprop="dateModified" content="2021-10-23T18:03:49&#43;09:00" />
+<meta itemprop="wordCount" content="218">
+<meta itemprop="keywords" content="Chrome,JavaScript," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="【Chrome拡張機能】JavaScriptで時計を作っていたら、&#39;unsafe-eval&#39;で怒られた"/>
+<meta name="twitter:description" content="この記事を読むと以下のような価値が生まれます。  .boxlight { background: #a9a9b3; box-shadow: 0px 0px 0px 10px #a9a9b3; padding: 0.5em 0.5em 0.5em 2em; margin: 40px; padding: 5px; border: double 10px #212020; color: #212020; } .boxlight ul { list-style-type: none; } .boxlight li { margin: 5px; } .boxlight li i { font-size: 15px; font-weight: bold; margin: 8px; }   unsafe-evalの意味がわかる setInterval構文の正しい書き方がわかる   さっさと本文読んでほしいにゃ  nav#TableOfContents { background: #a9a9b3; box-shadow: 0px 0px 0px 10px #a9a9b3; padding: 0."/>
+
+
+
+
+    <meta property="og:title" content="【Chrome拡張機能】JavaScriptで時計を作っていたら、&#39;unsafe-eval&#39;で怒られた" />
+<meta property="og:description" content="この記事を読むと以下のような価値が生まれます。  .boxlight { background: #a9a9b3; box-shadow: 0px 0px 0px 10px #a9a9b3; padding: 0.5em 0.5em 0.5em 2em; margin: 40px; padding: 5px; border: double 10px #212020; color: #212020; } .boxlight ul { list-style-type: none; } .boxlight li { margin: 5px; } .boxlight li i { font-size: 15px; font-weight: bold; margin: 8px; }   unsafe-evalの意味がわかる setInterval構文の正しい書き方がわかる   さっさと本文読んでほしいにゃ  nav#TableOfContents { background: #a9a9b3; box-shadow: 0px 0px 0px 10px #a9a9b3; padding: 0." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://zunta-blog.netlify.app/posts/2021/10/chrome%E6%8B%A1%E5%BC%B5%E6%A9%9F%E8%83%BDjavascript%E3%81%A7%E6%99%82%E8%A8%88%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%84%E3%81%9F%E3%82%89unsafe-eval%E3%81%A7%E6%80%92%E3%82%89%E3%82%8C%E3%81%9F/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-10-23T18:03:49&#43;09:00" />
+<meta property="article:modified_time" content="2021-10-23T18:03:49&#43;09:00" />
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2021-10-23 18:03:49 &#43;0900 JST" />
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://zunta-blog.netlify.app/" style="text-decoration: none;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1885 653.49" width="150" height="26"><defs><style>.cls-1{fill:#a9a9b3;stroke:#fff;stroke-miterlimit:10;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="letter"><rect class="cls-1" x="714.92" y="115.73" width="172.84" height="172.84"/><path class="cls-1" d="M1060.61,634.26H714.92V461.42c518.53,0,518.53-345.69,518.53-345.69C1233.45,634.26,1060.61,634.26,1060.61,634.26Z"/><path class="cls-1" d="M1366,115.73V461.42h345.69c0,172.84-345.69,172.84-345.69,172.84h345.69c172.84,0,172.84-172.84,172.84-172.84V115.73Zm282.31,267.91H1458.15V193.51h190.13Z"/><path class="cls-1" d="M363.53,563.21C407.35,653,519,653,519,653s-146.2,0-248.45-47.55"/><path class="cls-1" d="M271.93,605.59C138.37,653,.5,653,.5,653s345.69,0,345.69-345.69H.5V134.45H519V307.3c0,126.09-69,206.18-156.63,257.07"/><rect class="cls-1" x="477.26" y="0.5" width="66.26" height="123.87"/><rect class="cls-1" x="563.68" y="0.5" width="66.26" height="123.87"/></g></g></svg>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://zunta-blog.netlify.app/about/">ずんたとは</a></li><li><a href="https://zunta-blog.netlify.app/posts/">記事</a></li><li><a href="https://zunta-blog.netlify.app/portfolio/">作品</a></li><li><a href="https://zunta-blog.netlify.app/form/">お問い合わせ</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        2 minutes
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://zunta-blog.netlify.app/posts/2021/10/chrome%E6%8B%A1%E5%BC%B5%E6%A9%9F%E8%83%BDjavascript%E3%81%A7%E6%99%82%E8%A8%88%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%84%E3%81%9F%E3%82%89unsafe-eval%E3%81%A7%E6%80%92%E3%82%89%E3%82%8C%E3%81%9F/">【Chrome拡張機能】JavaScriptで時計を作っていたら、&lsquo;unsafe-eval&rsquo;で怒られた</a>
+      </h1>
+
+      
+
+      
+
+      <div class="post-content">
+        <!-- 記事設計項目 -->
+<!-- 伝えたいこと：Chrome拡張機能をつくるときにだけ、動かなくなるJavaScriptの文があるよ！！ -->
+<!-- ①掛け合わせ3つの狙うキーワード -->
+   <!-- Chrome拡張機能 JavaScript unsafe-eval -->
+   <!-- ②読者像 -->
+   <!--  Chrome拡張機能をJavaScriptで作ろうとしてる人  -->
+   <!-- ③読者の悩み -->
+   <!--   JavaScriptのエラーの意味がわからない   -->
+   <!-- ④悩みが解決する条件 -->
+   <!--   エラーの意味がわかり、正しい構文の書き方がわかる。   -->
+   <!-- ⑤悩みの解決策 -->
+   <!--   エラーの意味の解説・正しい構文の書き方   -->
+   <!-- ⑥記事を読むメリット -->
+   <!--      -->
+   <!-- ⑦記事の信頼性 -->
+   <!--      -->
+<!--------------->
+<!-- リード文 -->
+  <!-- 読者の悩みに共感する -->
+  <!-- 記事で示すことを書く -->
+  <!-- 悩みが解決する条件を提示する -->
+  <!-- 記事を読むメリットを示す -->
+  <!-- 記事の信頼性を示す -->
+<!----------->
+  <!--リード文（権威・読者の不安を解消、安心させる・）-->
+  <!--この記事を読む人の悩みの状況に共感する：Chrome拡張機能を作っているときに、Content Security Policyのエラーに引っかかって解決できない-->
+  <!--この記事を読むことで何を得られるか、どんな価値が生まれるか：Content Security Policyのunsafe-evalの意味が何となくわかる-->
+<!--この記事の根拠または信頼性：エンジニアではない私でも理解できた-->
+<p>この記事を読むと以下のような価値が生まれます。
+<style>
+  .boxlight {
+  background: #a9a9b3; 
+  box-shadow: 0px 0px 0px 10px #a9a9b3; 
+  padding: 0.5em 0.5em 0.5em 2em; 
+  margin: 40px;
+  padding: 5px;
+  border: double 10px #212020; 
+  color: #212020;
+  }
+  .boxlight ul {
+    list-style-type: none;
+  }
+  .boxlight li {
+  margin: 5px;
+  }
+  .boxlight li i {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 8px;
+  }
+</style>
+<div class="boxlight">
+  <ul>
+    
+    <li><i class="fas fa-check"></i>unsafe-evalの意味がわかる</li>
+    
+    
+    <li><i class="fas fa-check"></i>setInterval構文の正しい書き方がわかる</li>
+    
+    
+    
+    
+  </ul>
+</div>
+さっさと本文読んでほしいにゃ
+
+<style>
+
+  
+  nav#TableOfContents {
+  background: #a9a9b3; 
+  box-shadow: 0px 0px 0px 10px #a9a9b3; 
+  padding: 0.5em 0.5em 0.5em 2em; 
+  margin: 40px;
+  padding: 30px;
+  border: solid 3px #212020; 
+  color: #212020;
+}
+  nav#TableOfContents li {
+    list-style-type: none;
+    margin-bottom: 10px;
+  }
+
+  nav#TableOfContents li ul{
+    margin-top: 5px;
+  }
+
+  nav#TableOfContents a {
+  text-decoration: none;
+  }
+  nav#TableOfContents a:hover {
+  text-decoration: underline;
+  }
+ 
+  nav#TableOfContents a::before {
+    content: '\f2fe';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 1000;
+    font-size: 0.9em;
+    color: #232425(0, 0, 0);
+    margin-right: 5px;
+    text-align: center;
+  }
+.toc {
+  position: relative;
+}
+.toc-title {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  color: #eee;
+  display: inline-block;
+  background-color: #232425;
+  padding: 2px 4px;
+  word-break: break-all;
+}
+</style>
+<div class="toc">
+  <span class="toc-title">タップできるうんち</span>
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#エラー文">エラー文</a></li>
+    <li><a href="#解決策">解決策</a>
+      <ul>
+        <li><a href="#改善前">改善前</a></li>
+        <li><a href="#改善後">改善後</a></li>
+        <li><a href="#改善前後全文">改善前後全文</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div></p>
+<!-- エラー解説 -->
+<h2 id="エラー文">エラー文</h2>
+<!-- エラーが出る直前までやろうとしていたこと -->
+<p>Chromeで新規タブを開いたときに、<br>
+JavaScriptで動くデジタル時計を表示させようとしていたら<br>
+時計がうごかず、、、<br>
+<img src="https://user-images.githubusercontent.com/64098050/141012212-5c81a1ff-4079-40c2-8afe-99f50dab07dd.gif" alt="JSclock-notworking"></p>
+<!-- エラー本文 -->
+<p>Chromeの画面で右クリック＞検証＞consoleタブ<br>
+にこんなエラーが表示されていました。</p>
+<blockquote>
+<p>Refused to evaluate a string as JavaScript because &lsquo;unsafe-eval&rsquo; is not an allowed source of script in the following Content Security Policy directive: &ldquo;script-src &lsquo;self&rsquo;&rdquo;.</p>
+</blockquote>
+<!-- エラー文要約 -->
+<p><a href="https://kuroeveryday.blogspot.com/2015/06/ChromeExtensionsEvalError.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i>Chrome ExtensionsでUncaught EvalErrorになったときの対処法</a>
+
+<style>
+  a:hover {
+    text-decoration: none;
+  }
+</style>にも書かれている通り、<br>
+簡単に訳すと</p>
+<blockquote>
+<p>文字列からコードを生成するevalメソッドはGoogleのセキュリティ上、ダメですよ！</p>
+</blockquote>
+<!--結論-->
+<h2 id="解決策">解決策</h2>
+<p>setIntervalメソッドの第一引数を<strong>文字列</strong>ではなく、<strong>関数</strong>として読み込んだ。<br>
+私がコードの中で文字列から生成していたコードが以下であります。</p>
+<h3 id="改善前">改善前</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#a6e22e">setInterval</span>(<span style="color:#e6db74">&#39;showClock()&#39;</span>, <span style="color:#ae81ff">1000</span>);
+</code></pre></div><!--理由-->
+<!--具体例-->
+<h3 id="改善後">改善後</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#a6e22e">setInterval</span>(<span style="color:#66d9ef">function</span>(){<span style="color:#a6e22e">showClock</span>()}, <span style="color:#ae81ff">1000</span>);
+</code></pre></div><h3 id="改善前後全文">改善前後全文</h3>
+<a href="https://github.com/zuzuzunta0/New-Tab-Clock/commit/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i>GitHubのソースコード</a>
+
+<style>
+  a:hover {
+    text-decoration: none;
+  }
+</style>
+<p><img src="https://user-images.githubusercontent.com/64098050/138999282-cc327f11-411f-47ea-9ce9-db2ff03e5f76.PNG" alt="setInterval code img"></p>
+<p>無事表示されました
+<img src="https://user-images.githubusercontent.com/64098050/141012241-0df08a40-c7b9-4c0d-935a-a451eb5414c1.gif" alt="JSclock-working"></p>
+<!-- 
+
+[MDN Web Docs](https://developer.mozilla.org/ja/docs/Web/API/setInterval)
+によると、setIntervalメソッドの第一引数
+
+## なぜこのエラーにたどり着いたか
+### 作りたかったもの
+[Chrome Extensions: New Tab Override - Programming with Text](https://youtu.be/vNb3P5KIxXw)
+このリンクにある動画にある通り、
+Chromeで新規タブを開いたときに、JavaScriptで動く時計をHTML上に表示させたかった。
+
+そこでネットからテキトーに[引っ張ってきたコード](https://qumeru.com/magazine/362)をそのまま貼り付けた。
+
+
+setIntervalの第一引数には”定義した関数の文字列”を入れても関数を動かすことができるし、
+”関数として直接functionを作ったもの”でも呼び込むことができる。
+
+
+しかし、Chrome拡張機能の中で作る場合には、
+第一引数に”定義した関数の文字列”を入れるとunsafe-evalというエラーがでてしまう。 -->
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://zunta-blog.netlify.app/tags/chrome/">Chrome</a></span>
+        <span class="tag"><a href="https://zunta-blog.netlify.app/tags/javascript/">JavaScript</a></span>
+        
+    </p>
+
+      
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        218 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2021-10-23 18:03
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+    <div class="pagination">
+        <div class="pagination__title">
+            <span class="pagination__title-h"></span>
+            <hr />
+        </div>
+
+        <div class="pagination__buttons">
+            
+            <span class="button previous">
+                <a href="https://zunta-blog.netlify.app/posts/2021/12/%E3%83%8E%E3%83%BC%E3%82%B3%E3%83%BC%E3%83%89%E3%81%A7%E3%82%B7%E3%83%95%E3%83%88%E7%A2%BA%E8%AA%8D%E3%82%A2%E3%83%97%E3%83%AA%E4%BD%9C%E3%82%8B%EF%BC%93%E3%82%B9%E3%83%86%E3%83%83%E3%83%97appsheet/">
+                    <span class="button__icon">←</span>
+                    <span class="button__text">ノーコードでシフト確認アプリ作る３ステップ【AppSheet】</span>
+                </a>
+            </span>
+            
+
+            
+        </div>
+    </div>
+
+
+    
+      
+        <div id="comments">
+          <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "zunta" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+      
+    
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2022</span>
+            <span><a href="https://zunta-blog.netlify.app">Zunta</a></span>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+          </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="https://zunta-blog.netlify.app/bundle.min.599099f1f14b78b657d524b28e10e0c5098e7cd46e9c7aed73d577068a276c3ff1bb234cbf29cb313333e83cf411727b43157c91ce5b809e2ffc81664614608e.js" integrity="sha512-WZCZ8fFLeLZX1SSyjhDgxQmOfNRunHrtc9V3BoonbD/xuyNMvynLMTMz6Dz0EXJ7QxV8kc5bgJ4v/IFmRhRgjg=="></script>
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-95H4J2PZ64"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-95H4J2PZ64', { 'anonymize_ip': false });
+}
+</script>
+
+
+
+
+    </body>
+</html>

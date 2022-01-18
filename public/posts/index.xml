@@ -1,0 +1,454 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on ずんたブログ</title>
+        <link>https://zunta-blog.netlify.app/posts/</link>
+        <description>Recent content in Posts on ずんたブログ</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+        <lastBuildDate>Sun, 19 Dec 2021 09:56:45 +0900</lastBuildDate>
+        <atom:link href="https://zunta-blog.netlify.app/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>ノーコードでシフト確認アプリ作る３ステップ【AppSheet】</title>
+            <link>https://zunta-blog.netlify.app/posts/2021/12/%E3%83%8E%E3%83%BC%E3%82%B3%E3%83%BC%E3%83%89%E3%81%A7%E3%82%B7%E3%83%95%E3%83%88%E7%A2%BA%E8%AA%8D%E3%82%A2%E3%83%97%E3%83%AA%E4%BD%9C%E3%82%8B%EF%BC%93%E3%82%B9%E3%83%86%E3%83%83%E3%83%97appsheet/</link>
+            <pubDate>Sun, 19 Dec 2021 09:56:45 +0900</pubDate>
+            
+            <guid>https://zunta-blog.netlify.app/posts/2021/12/%E3%83%8E%E3%83%BC%E3%82%B3%E3%83%BC%E3%83%89%E3%81%A7%E3%82%B7%E3%83%95%E3%83%88%E7%A2%BA%E8%AA%8D%E3%82%A2%E3%83%97%E3%83%AA%E4%BD%9C%E3%82%8B%EF%BC%93%E3%82%B9%E3%83%86%E3%83%83%E3%83%97appsheet/</guid>
+            <description>記事設計 伝えたいこと 掛け合わせ3つの狙うキーワード AppSheet 作り方
+読者像・読者の理解レベル アルバイトを動かす立場の人間, AppSheetの存在を知っていて、具体的に作り方を参考にしたい&amp;ndash;&amp;gt;
+読者の悩み ・シフト表を毎回たどって今日のメンバーを現すのが、いちいちめんどくさい ・シフト表をスマホで確認したい
+悩みが解決する条件 シフト表を自
+悩みの解決策   Icons8  nav#TableOfContents { background: #a9a9b3; box-shadow: 0px 0px 0px 10px #a9a9b3; padding: 0.5em 0.5em 0.5em 2em; margin: 40px; padding: 30px; border: solid 3px #212020; color: #212020; } nav#TableOfContents li { list-style-type: none; margin-bottom: 10px; } nav#TableOfContents li ul{ margin-top: 5px; } nav#TableOfContents a { text-decoration: none; } nav#TableOfContents a:hover { text-decoration: underline; } nav#TableOfContents a::before { content: &#39;\f2fe&#39;; font-family: &#34;</description>
+            <content type="html"><![CDATA[<!----------------------- ↓記事設計↓ ----------------------->
+<h1 id="記事設計">記事設計</h1>
+<h2 id="伝えたいこと">伝えたいこと</h2>
+<h2 id="掛け合わせ3つの狙うキーワード">掛け合わせ3つの狙うキーワード</h2>
+<p>AppSheet 作り方</p>
+<h2 id="読者像読者の理解レベル">読者像・読者の理解レベル</h2>
+<p>アルバイトを動かす立場の人間,
+AppSheetの存在を知っていて、具体的に作り方を参考にしたい&ndash;&gt;</p>
+<h2 id="読者の悩み">読者の悩み</h2>
+<p>・シフト表を毎回たどって今日のメンバーを現すのが、いちいちめんどくさい
+・シフト表をスマホで確認したい</p>
+<h2 id="悩みが解決する条件">悩みが解決する条件</h2>
+<p>シフト表を自</p>
+<h2 id="悩みの解決策">悩みの解決策</h2>
+  <!-- ⑥記事を読むメリット -->
+  <!-- ⑦記事の信頼性 -->
+<!-- このアプリが提供する価値
+・昨日のメンバー可視化⇨昨日の状況が把握できて、それぞれがどれぐらいの疲労度で望んでくるのかわかりやすい＆昨日のことについての雑談ネタにもなる＆チームの承認を高めることができる
+・明日のメンバー可視化⇨ホワイトボードで明日のメンバーを作る時に役立つ＆明日の準備を頭に入れることができる
+・スプレッドシートから作っている⇨データベースの操作が視覚的にわかりやすい。
+ -->
+<!----------------------- ↑記事設計↑ ----------------------->
+<p><figure>
+    <img src="/img/002eyecatch1.png"/> 
+</figure>
+
+<a href="https://icons8.jp/">Icons8</a>
+
+<style>
+
+  
+  nav#TableOfContents {
+  background: #a9a9b3; 
+  box-shadow: 0px 0px 0px 10px #a9a9b3; 
+  padding: 0.5em 0.5em 0.5em 2em; 
+  margin: 40px;
+  padding: 30px;
+  border: solid 3px #212020; 
+  color: #212020;
+}
+  nav#TableOfContents li {
+    list-style-type: none;
+    margin-bottom: 10px;
+  }
+
+  nav#TableOfContents li ul{
+    margin-top: 5px;
+  }
+
+  nav#TableOfContents a {
+  text-decoration: none;
+  }
+  nav#TableOfContents a:hover {
+  text-decoration: underline;
+  }
+ 
+  nav#TableOfContents a::before {
+    content: '\f2fe';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 1000;
+    font-size: 0.9em;
+    color: #232425(0, 0, 0);
+    margin-right: 5px;
+    text-align: center;
+  }
+.toc {
+  position: relative;
+}
+.toc-title {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  color: #eee;
+  display: inline-block;
+  background-color: #232425;
+  padding: 2px 4px;
+  word-break: break-all;
+}
+</style>
+<div class="toc">
+  <span class="toc-title">タップできるうんち</span>
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#伝えたいこと">伝えたいこと</a></li>
+    <li><a href="#掛け合わせ3つの狙うキーワード">掛け合わせ3つの狙うキーワード</a></li>
+    <li><a href="#読者像読者の理解レベル">読者像・読者の理解レベル</a></li>
+    <li><a href="#読者の悩み">読者の悩み</a></li>
+    <li><a href="#悩みが解決する条件">悩みが解決する条件</a></li>
+    <li><a href="#悩みの解決策">悩みの解決策</a></li>
+    <li><a href="#このアプリでやりたいこと">このアプリでやりたいこと</a></li>
+    <li><a href="#実際のアプリ設計">実際のアプリ設計</a>
+      <ul>
+        <li><a href="#スプレッドシート内で作るもの">スプレッドシート内で作るもの</a></li>
+        <li><a href="#appsheet内でつくるもの">AppSheet内でつくるもの</a></li>
+      </ul>
+    </li>
+    <li><a href="#なぜ私はappsheetを選んだのか">なぜ私はAppSheetを選んだのか？</a></li>
+    <li><a href="#そんなあなたにシフタス">そんなあなたに「シフタス」</a>
+      <ul>
+        <li><a href="#昨日のタブ">昨日のタブ</a></li>
+        <li><a href="#本日のタブ">本日のタブ</a></li>
+        <li><a href="#明日のタブ">明日のタブ</a></li>
+      </ul>
+    </li>
+    <li><a href="#インストール方法">インストール方法</a>
+      <ul>
+        <li><a href="#appsheetを自分のスマホにインストール">「AppSheet」を自分のスマホにインストール</a></li>
+        <li><a href="#urlを開く">URLを開く</a></li>
+      </ul>
+    </li>
+    <li><a href="#使い方">使い方</a>
+      <ul>
+        <li><a href="#スプレッドシート側の操作">スプレッドシート側の操作</a></li>
+        <li><a href="#heading"></a></li>
+      </ul>
+    </li>
+    <li><a href="#使った技術">使った技術</a></li>
+  </ul>
+</nav>
+</div></p>
+<!-- 導入文⇨読者の悩み共感 -->
+<h2 id="このアプリでやりたいこと">このアプリでやりたいこと</h2>
+<p>スプレッドシートのシフト表を、スマホから見やすくしたい。<br>
+そこでおすすめしたいのが「AppSheet」<br>
+スプレッドシートの中の情報を読み込んだスマホアプリが作れるので、<br>
+情報確認もとても簡単ですばやくできます。
+スプレッドシートのアプリから確認するより、さらに効果的です。</p>
+<h2 id="実際のアプリ設計">実際のアプリ設計</h2>
+<h3 id="スプレッドシート内で作るもの">スプレッドシート内で作るもの</h3>
+<ol>
+<li>シフト表作る</li>
+<li>その日ごとの出勤する人を抜き出して、ひとつのセルにまとめ、それを並べる</li>
+<li>ひとつのセルにまとめた表を、関数を使って昨日・今日・明日のシートを別に作って抜き出す</li>
+</ol>
+<h3 id="appsheet内でつくるもの">AppSheet内でつくるもの</h3>
+<ol>
+<li>昨日・今日・明日の3つのタブをつくる</li>
+<li>3つのタブそれぞれに、読み込むスプレッドシートを指定する</li>
+</ol>
+<!-- 背景↓ -->
+<h2 id="なぜ私はappsheetを選んだのか">なぜ私はAppSheetを選んだのか？</h2>
+<p>スプレッドシートのスマホアプリが実際にありますが、<br>
+情報の確認がめんどくさい。</p>
+<h2 id="そんなあなたにシフタス">そんなあなたに「シフタス」</h2>
+<p><em>シフト</em>の<em>ステータス</em>が見られるアプリ
+なづけて「<em>シフタス</em>」
+動作風景<br>
+できることは立ったの3つ。しかし、効果は無限大。
+「昨日・本日・明日」の出勤メンバーがパッとわかります。</p>
+<h3 id="昨日のタブ">昨日のタブ</h3>
+<p>自分が休みだった日の昨日はどんな状況だったのかの<strong>雑談ネタ</strong>になります。<br>
+毎日同じ作業を繰り返す仕事にとって、<br>
+その日の変化にいかに上手く対応できるかどうかは、<br>
+こういう時の雑談で状況を知っておくことが意外と大事です。</p>
+<h3 id="本日のタブ">本日のタブ</h3>
+<p>当日の業務中の判断に使います。<br>
+今何人いるのか、誰が出勤していないのかが手元ですぐわかることは、<br>
+業務の中での<strong>判断スピードを高めます。</strong><br>
+さまざまな状況の変化にも柔軟にスピーディーに対応可能になります。</p>
+<h3 id="明日のタブ">明日のタブ</h3>
+<p>仕事は準備が10割です。<br>
+<strong>明日の仕事の流れを予測して準備する</strong>ことは、<br>
+明日の出勤メンバーを把握することから始まります。<br>
+能力のバランスをみて、根回ししておくのも、素晴らしいリーダーの秘訣です。</p>
+<h2 id="インストール方法">インストール方法</h2>
+<h3 id="appsheetを自分のスマホにインストール">「AppSheet」を自分のスマホにインストール</h3>
+<p><figure>
+    <img src="/img/002appsheet.png" width="100px"/> 
+</figure>
+
+iPhoneの方は、コチラ↓から。<br>
+<a href="https://apps.apple.com/us/app/appsheet/id732548900?itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 180px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1383264000&h=1f2e22540d169a038bdea2c889998a39" alt="Download on the App Store" style="border-radius: 13px; width: 250px; height: 83px;"></a><br>
+Androidの方は、コチラ↓から。
+<a href='https://play.google.com/store/apps/details?id=x1Trackmaster.x1Trackmaster&hl=ja&gl=US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img width= "200" alt='Google Play で手に入れよう' src='https://play.google.com/intl/en_us/badges/static/images/badges/ja_badge_web_generic.png'/></a></p>
+<h3 id="urlを開く">URLを開く</h3>
+<p>AppSheetがダウンロードできた状態で、<br>
+以下のURLを開くと、私の作ったシフト確認アプリが確認できます。</p>
+<p><a href="https://www.appsheet.com/newshortcut/9739a17a-a4c5-4906-af20-cd8e5353a445">https://www.appsheet.com/newshortcut/9739a17a-a4c5-4906-af20-cd8e5353a445</a></p>
+<h2 id="使い方">使い方</h2>
+<p><em>シフタス</em>は</p>
+<h3 id="スプレッドシート側の操作">スプレッドシート側の操作</h3>
+<p>月が変わるごとに、アルバイトの</p>
+<h3 id="heading"></h3>
+<h2 id="使った技術">使った技術</h2>
+<style>
+  .boxlight {
+  background: #a9a9b3; 
+  box-shadow: 0px 0px 0px 10px #a9a9b3; 
+  padding: 0.5em 0.5em 0.5em 2em; 
+  margin: 40px;
+  padding: 5px;
+  border: double 10px #212020; 
+  color: #212020;
+  }
+  .boxlight ul {
+    list-style-type: none;
+  }
+  .boxlight li {
+  margin: 5px;
+  }
+  .boxlight li i {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 8px;
+  }
+</style>
+<div class="boxlight">
+  <ul>
+    
+    <li><i class="fas fa-check"></i>Google Spreadsheet</li>
+    
+    
+    <li><i class="fas fa-check"></i>App Sheet</li>
+    
+    
+    
+    
+  </ul>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>【Chrome拡張機能】JavaScriptで時計を作っていたら、&#39;unsafe-eval&#39;で怒られた</title>
+            <link>https://zunta-blog.netlify.app/posts/2021/10/chrome%E6%8B%A1%E5%BC%B5%E6%A9%9F%E8%83%BDjavascript%E3%81%A7%E6%99%82%E8%A8%88%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%84%E3%81%9F%E3%82%89unsafe-eval%E3%81%A7%E6%80%92%E3%82%89%E3%82%8C%E3%81%9F/</link>
+            <pubDate>Sat, 23 Oct 2021 18:03:49 +0900</pubDate>
+            
+            <guid>https://zunta-blog.netlify.app/posts/2021/10/chrome%E6%8B%A1%E5%BC%B5%E6%A9%9F%E8%83%BDjavascript%E3%81%A7%E6%99%82%E8%A8%88%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%84%E3%81%9F%E3%82%89unsafe-eval%E3%81%A7%E6%80%92%E3%82%89%E3%82%8C%E3%81%9F/</guid>
+            <description>この記事を読むと以下のような価値が生まれます。  .boxlight { background: #a9a9b3; box-shadow: 0px 0px 0px 10px #a9a9b3; padding: 0.5em 0.5em 0.5em 2em; margin: 40px; padding: 5px; border: double 10px #212020; color: #212020; } .boxlight ul { list-style-type: none; } .boxlight li { margin: 5px; } .boxlight li i { font-size: 15px; font-weight: bold; margin: 8px; }   unsafe-evalの意味がわかる setInterval構文の正しい書き方がわかる   さっさと本文読んでほしいにゃ  nav#TableOfContents { background: #a9a9b3; box-shadow: 0px 0px 0px 10px #a9a9b3; padding: 0.</description>
+            <content type="html"><![CDATA[<!-- 記事設計項目 -->
+<!-- 伝えたいこと：Chrome拡張機能をつくるときにだけ、動かなくなるJavaScriptの文があるよ！！ -->
+<!-- ①掛け合わせ3つの狙うキーワード -->
+   <!-- Chrome拡張機能 JavaScript unsafe-eval -->
+   <!-- ②読者像 -->
+   <!--  Chrome拡張機能をJavaScriptで作ろうとしてる人  -->
+   <!-- ③読者の悩み -->
+   <!--   JavaScriptのエラーの意味がわからない   -->
+   <!-- ④悩みが解決する条件 -->
+   <!--   エラーの意味がわかり、正しい構文の書き方がわかる。   -->
+   <!-- ⑤悩みの解決策 -->
+   <!--   エラーの意味の解説・正しい構文の書き方   -->
+   <!-- ⑥記事を読むメリット -->
+   <!--      -->
+   <!-- ⑦記事の信頼性 -->
+   <!--      -->
+<!--------------->
+<!-- リード文 -->
+  <!-- 読者の悩みに共感する -->
+  <!-- 記事で示すことを書く -->
+  <!-- 悩みが解決する条件を提示する -->
+  <!-- 記事を読むメリットを示す -->
+  <!-- 記事の信頼性を示す -->
+<!----------->
+  <!--リード文（権威・読者の不安を解消、安心させる・）-->
+  <!--この記事を読む人の悩みの状況に共感する：Chrome拡張機能を作っているときに、Content Security Policyのエラーに引っかかって解決できない-->
+  <!--この記事を読むことで何を得られるか、どんな価値が生まれるか：Content Security Policyのunsafe-evalの意味が何となくわかる-->
+<!--この記事の根拠または信頼性：エンジニアではない私でも理解できた-->
+<p>この記事を読むと以下のような価値が生まれます。
+<style>
+  .boxlight {
+  background: #a9a9b3; 
+  box-shadow: 0px 0px 0px 10px #a9a9b3; 
+  padding: 0.5em 0.5em 0.5em 2em; 
+  margin: 40px;
+  padding: 5px;
+  border: double 10px #212020; 
+  color: #212020;
+  }
+  .boxlight ul {
+    list-style-type: none;
+  }
+  .boxlight li {
+  margin: 5px;
+  }
+  .boxlight li i {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 8px;
+  }
+</style>
+<div class="boxlight">
+  <ul>
+    
+    <li><i class="fas fa-check"></i>unsafe-evalの意味がわかる</li>
+    
+    
+    <li><i class="fas fa-check"></i>setInterval構文の正しい書き方がわかる</li>
+    
+    
+    
+    
+  </ul>
+</div>
+さっさと本文読んでほしいにゃ
+
+<style>
+
+  
+  nav#TableOfContents {
+  background: #a9a9b3; 
+  box-shadow: 0px 0px 0px 10px #a9a9b3; 
+  padding: 0.5em 0.5em 0.5em 2em; 
+  margin: 40px;
+  padding: 30px;
+  border: solid 3px #212020; 
+  color: #212020;
+}
+  nav#TableOfContents li {
+    list-style-type: none;
+    margin-bottom: 10px;
+  }
+
+  nav#TableOfContents li ul{
+    margin-top: 5px;
+  }
+
+  nav#TableOfContents a {
+  text-decoration: none;
+  }
+  nav#TableOfContents a:hover {
+  text-decoration: underline;
+  }
+ 
+  nav#TableOfContents a::before {
+    content: '\f2fe';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 1000;
+    font-size: 0.9em;
+    color: #232425(0, 0, 0);
+    margin-right: 5px;
+    text-align: center;
+  }
+.toc {
+  position: relative;
+}
+.toc-title {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  color: #eee;
+  display: inline-block;
+  background-color: #232425;
+  padding: 2px 4px;
+  word-break: break-all;
+}
+</style>
+<div class="toc">
+  <span class="toc-title">タップできるうんち</span>
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#エラー文">エラー文</a></li>
+    <li><a href="#解決策">解決策</a>
+      <ul>
+        <li><a href="#改善前">改善前</a></li>
+        <li><a href="#改善後">改善後</a></li>
+        <li><a href="#改善前後全文">改善前後全文</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div></p>
+<!-- エラー解説 -->
+<h2 id="エラー文">エラー文</h2>
+<!-- エラーが出る直前までやろうとしていたこと -->
+<p>Chromeで新規タブを開いたときに、<br>
+JavaScriptで動くデジタル時計を表示させようとしていたら<br>
+時計がうごかず、、、<br>
+<img src="https://user-images.githubusercontent.com/64098050/141012212-5c81a1ff-4079-40c2-8afe-99f50dab07dd.gif" alt="JSclock-notworking"></p>
+<!-- エラー本文 -->
+<p>Chromeの画面で右クリック＞検証＞consoleタブ<br>
+にこんなエラーが表示されていました。</p>
+<blockquote>
+<p>Refused to evaluate a string as JavaScript because &lsquo;unsafe-eval&rsquo; is not an allowed source of script in the following Content Security Policy directive: &ldquo;script-src &lsquo;self&rsquo;&rdquo;.</p>
+</blockquote>
+<!-- エラー文要約 -->
+<p><a href="https://kuroeveryday.blogspot.com/2015/06/ChromeExtensionsEvalError.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i>Chrome ExtensionsでUncaught EvalErrorになったときの対処法</a>
+
+<style>
+  a:hover {
+    text-decoration: none;
+  }
+</style>にも書かれている通り、<br>
+簡単に訳すと</p>
+<blockquote>
+<p>文字列からコードを生成するevalメソッドはGoogleのセキュリティ上、ダメですよ！</p>
+</blockquote>
+<!--結論-->
+<h2 id="解決策">解決策</h2>
+<p>setIntervalメソッドの第一引数を<strong>文字列</strong>ではなく、<strong>関数</strong>として読み込んだ。<br>
+私がコードの中で文字列から生成していたコードが以下であります。</p>
+<h3 id="改善前">改善前</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#a6e22e">setInterval</span>(<span style="color:#e6db74">&#39;showClock()&#39;</span>, <span style="color:#ae81ff">1000</span>);
+</code></pre></div><!--理由-->
+<!--具体例-->
+<h3 id="改善後">改善後</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#a6e22e">setInterval</span>(<span style="color:#66d9ef">function</span>(){<span style="color:#a6e22e">showClock</span>()}, <span style="color:#ae81ff">1000</span>);
+</code></pre></div><h3 id="改善前後全文">改善前後全文</h3>
+<a href="https://github.com/zuzuzunta0/New-Tab-Clock/commit/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i>GitHubのソースコード</a>
+
+<style>
+  a:hover {
+    text-decoration: none;
+  }
+</style>
+<p><img src="https://user-images.githubusercontent.com/64098050/138999282-cc327f11-411f-47ea-9ce9-db2ff03e5f76.PNG" alt="setInterval code img"></p>
+<p>無事表示されました
+<img src="https://user-images.githubusercontent.com/64098050/141012241-0df08a40-c7b9-4c0d-935a-a451eb5414c1.gif" alt="JSclock-working"></p>
+<!-- 
+
+[MDN Web Docs](https://developer.mozilla.org/ja/docs/Web/API/setInterval)
+によると、setIntervalメソッドの第一引数
+
+## なぜこのエラーにたどり着いたか
+### 作りたかったもの
+[Chrome Extensions: New Tab Override - Programming with Text](https://youtu.be/vNb3P5KIxXw)
+このリンクにある動画にある通り、
+Chromeで新規タブを開いたときに、JavaScriptで動く時計をHTML上に表示させたかった。
+
+そこでネットからテキトーに[引っ張ってきたコード](https://qumeru.com/magazine/362)をそのまま貼り付けた。
+
+
+setIntervalの第一引数には”定義した関数の文字列”を入れても関数を動かすことができるし、
+”関数として直接functionを作ったもの”でも呼び込むことができる。
+
+
+しかし、Chrome拡張機能の中で作る場合には、
+第一引数に”定義した関数の文字列”を入れるとunsafe-evalというエラーがでてしまう。 -->
+]]></content>
+        </item>
+        
+    </channel>
+</rss>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on ずんたブログ</title>
+    <link>https://zunta-blog.netlify.app/tags/</link>
+    <description>Recent content in Tags on ずんたブログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sun, 19 Dec 2021 09:56:45 +0900</lastBuildDate><atom:link href="https://zunta-blog.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AppSheet</title>
+      <link>https://zunta-blog.netlify.app/tags/appsheet/</link>
+      <pubDate>Sun, 19 Dec 2021 09:56:45 +0900</pubDate>
+      
+      <guid>https://zunta-blog.netlify.app/tags/appsheet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SpreadSheet</title>
+      <link>https://zunta-blog.netlify.app/tags/spreadsheet/</link>
+      <pubDate>Sun, 19 Dec 2021 09:56:45 +0900</pubDate>
+      
+      <guid>https://zunta-blog.netlify.app/tags/spreadsheet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Chrome</title>
+      <link>https://zunta-blog.netlify.app/tags/chrome/</link>
+      <pubDate>Sat, 23 Oct 2021 18:03:49 +0900</pubDate>
+      
+      <guid>https://zunta-blog.netlify.app/tags/chrome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JavaScript</title>
+      <link>https://zunta-blog.netlify.app/tags/javascript/</link>
+      <pubDate>Sat, 23 Oct 2021 18:03:49 +0900</pubDate>
+      
+      <guid>https://zunta-blog.netlify.app/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
