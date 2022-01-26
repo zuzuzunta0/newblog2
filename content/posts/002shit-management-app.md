@@ -32,7 +32,7 @@ tags: ["AppSheet", "SpreadSheet"]
 {{< figure src="/img/002eyecatch1.png">}}
 [Icons8](https://icons8.jp/)  
 私の職場では、シフト表が下の画像のようになっています
-{{< figure src="/img/002shifttable.jpg" width="300" >}}  
+{{< figure src="/img/002old_shift_table.jpg" width="300" >}}  
 とってもみにくいい！！！  
 何が見にくいって
 - 今日誰が出勤してくるかを見つけるのに、目をぐるんぐるん動かして探さなければならない
@@ -46,8 +46,8 @@ tags: ["AppSheet", "SpreadSheet"]
 「昨日」「今日」「明日」出勤するメンバーを確認することができる。
 <!-- スプレッドシートの画像 -->
 <!-- AppSheet側の画像 -->
-## アプリの設計
-・draw.io
+### アプリの設計
+{{< figure src="/img/002appsheet_flowchart.svg" >}}
 ## AppSheetの良いところ
 私がAppSheetが良いなぁと感じたのは以下の3点。
 {{< list "スプレッドシートからスマホアプリが作れる" "ブラウザ上だけでアプリ作りができる" "簡単に見やすいアプリが作れる">}}
