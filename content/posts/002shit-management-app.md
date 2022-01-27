@@ -44,11 +44,42 @@ tags: ["AppSheet", "SpreadSheet"]
 ## 作ったアプリの機能
 スプレッドシートのシフト表から、  
 「昨日」「今日」「明日」出勤するメンバーを確認することができる。
+### 完成したアプリの動く様子
 {{< figure src="/img/002appsheet-working.gif" >}}
+以下のURLは完成したシフト確認アプリのURLです。
+PCの方はクリックすれば実際にアプリを動かせます。
+スマホの方はAppSheetのアプリをダウンロードした上で、クリックしていただくとアプリを動く様子が確認できます。
+https://www.appsheet.com/newshortcut/9739a17a-a4c5-4906-af20-cd8e5353a445
 <!-- スプレッドシートの画像 -->
 <!-- AppSheet側の画像 -->
 ### アプリの設計
 {{< figure src="/img/002appsheet_flowchart.svg" >}}
+
+### スプレッドシート内で作るもの
+1. シフト表作る
+1. その日ごとの出勤する人を抜き出して、ひとつのセルにまとめ、それを並べる
+1. ひとつのセルにまとめた表を、関数を使って昨日・今日・明日のシートを別に作って抜き出す
+
+### AppSheet内でつくるもの
+1. 昨日・今日・明日の3つのタブをつくる
+1. 3つのタブそれぞれに、読み込むスプレッドシートを指定する
+
+
+## 作り方
+### 「AppSheet」を自分のスマホにインストール  
+{{< figure src="/img/002appsheet.png" width="100px">}}
+iPhoneの方は、コチラ↓から。  
+<a href="https://apps.apple.com/us/app/appsheet/id732548900?itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 180px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1383264000&h=1f2e22540d169a038bdea2c889998a39" alt="Download on the App Store" style="border-radius: 13px; width: 250px; height: 83px;"></a>  
+Androidの方は、コチラ↓から。
+<a href='https://play.google.com/store/apps/details?id=x1Trackmaster.x1Trackmaster&hl=ja&gl=US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img width= "200" alt='Google Play で手に入れよう' src='https://play.google.com/intl/en_us/badges/static/images/badges/ja_badge_web_generic.png'/></a>
+
+### URLを開く
+AppSheetがダウンロードできた状態で、  
+以下のURLを開くと、私の作ったシフト確認アプリを実際に動かすことができます。  
+ぜひ、お試しあれ。
+
+https://www.appsheet.com/newshortcut/9739a17a-a4c5-4906-af20-cd8e5353a445
+
 ## AppSheetの良いところ
 私がAppSheetが良いなぁと感じたのは以下の3点。
 {{< list "スプレッドシートからスマホアプリが作れる" "ブラウザ上だけでアプリ作りができる" "簡単に見やすいアプリが作れる">}}
@@ -64,41 +95,6 @@ tags: ["AppSheet", "SpreadSheet"]
 ### 簡単に見やすいアプリが作れる
 アプリのUIの見た目を整えて見やすくするという作業は、意外と難しいものですが、
 AppSheetでは、ボタンを押すだけで自動的に見た目を整えてくれます。
-## 実際のアプリ設計
-### シフト表をみる目的ごとに情報を整理する
-
-### スプレッドシート内で作るもの
-1. シフト表作る
-1. その日ごとの出勤する人を抜き出して、ひとつのセルにまとめ、それを並べる
-1. ひとつのセルにまとめた表を、関数を使って昨日・今日・明日のシートを別に作って抜き出す
-
-### AppSheet内でつくるもの
-1. 昨日・今日・明日の3つのタブをつくる
-1. 3つのタブそれぞれに、読み込むスプレッドシートを指定する
-
-<!-- 背景↓ -->
-## なぜ私はAppSheetを選んだのか？
-スプレッドシートのスマホアプリが実際にありますが、  
-情報の確認がめんどくさい。
-
-## インストール方法
-### 「AppSheet」を自分のスマホにインストール  
-{{< figure src="/img/002appsheet.png" width="100px">}}
-iPhoneの方は、コチラ↓から。  
-<a href="https://apps.apple.com/us/app/appsheet/id732548900?itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 180px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1383264000&h=1f2e22540d169a038bdea2c889998a39" alt="Download on the App Store" style="border-radius: 13px; width: 250px; height: 83px;"></a>  
-Androidの方は、コチラ↓から。
-<a href='https://play.google.com/store/apps/details?id=x1Trackmaster.x1Trackmaster&hl=ja&gl=US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img width= "200" alt='Google Play で手に入れよう' src='https://play.google.com/intl/en_us/badges/static/images/badges/ja_badge_web_generic.png'/></a>
-
-### URLを開く
-AppSheetがダウンロードできた状態で、  
-以下のURLを開くと、私の作ったシフト確認アプリが確認できます。
-
-https://www.appsheet.com/newshortcut/9739a17a-a4c5-4906-af20-cd8e5353a445
-## 使い方
-*シフタス*は
-### スプレッドシート側の操作
-月が変わるごとに、アルバイトの
-
   
 ## まとめ
 ## 参考文献
