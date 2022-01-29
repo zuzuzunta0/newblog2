@@ -34,25 +34,29 @@ tags: ["AppSheet", "SpreadSheet"]
 <!----------------------- ↑記事設計↑ ----------------------->
 {{< figure src="/img/002eyecatch1.png">}}
 [Icons8](https://icons8.jp/)  
+<!-- 導入文⇨読者の悩み共感 -->  
+*スプレッドシートをアプリにできるツール*が無いかどうか探していたところ、  
+この**AppSheet**に出会いました。
+
+個人で使うことに関しては、めちゃくちゃ*便利で無料*だったので、  
+今回は**実際のアプリの作り方**を解説していきたいと思います。
+{{< toc >}}
+
+## 今回作るアプリの内容
+### このアプリで解決したい課題
 私の職場では、シフト表が下の画像のようになっています。
 {{< figure src="/img/002old_shift_table.jpg" width="300" >}}  
 とってもみにくいい！！！  
-
-これでは「*今日誰が出勤するか*」を探すだけで時間がかかってしまいます。
+これでは「*今日誰が出勤するか*」を探すだけで時間がかかってしまいます。  
   
-
-なので、もっとシフト表を見やすくしたいと思い立ちこのアプリを作りました。  
-誰かのアプリ作りの参考になれば幸いです。
-{{< toc >}}
-<!-- 導入文⇨読者の悩み共感 -->
-## 作ったアプリの機能
-スプレッドシートのシフト表から、  
+なぜならこの形の表は、そもそも*シフトを作るときに使うと便利な形*であって、  
+*シフト表を見ること*に関して、便利な形ではありません。
+### 作ったアプリの動く様子
 「昨日」「今日」「明日」出勤するメンバーを確認することができる。
-### 完成したアプリの動く様子
 {{< figure src="/img/002appsheet-working.gif" >}}
 ↓こちらでシフト確認アプリの動作確認ができます。  
 {{< link title="シフト確認アプリ" url="https://www.appsheet.com/newshortcut/9739a17a-a4c5-4906-af20-cd8e5353a445">}}  
-（スマホの方はAppSheetのアプリをダウンロードしてからじゃないと開けません。）  
+（スマホの方はAppSheetのアプリをダウンロードしてからURLをタップしてください。）  
 <!-- スプレッドシートの画像 -->
 <!-- AppSheet側の画像 -->
 ### アプリの設計
@@ -60,12 +64,19 @@ tags: ["AppSheet", "SpreadSheet"]
 
 ## アプリをつくるのに必要なもの
 ### スプレッドシートのデータ
+{{< link title="シフト管理forリーダー2022" url="https://docs.google.com/spreadsheets/d/1YEOSUjQRfWycKkWA1PYXLyvWFj9rUCBAZQq3S3A-ZiE/edit?usp=sharing">}}  
+こちらのシートを元にAppSheetでアプリを作っていきます。
 ### Googleアカウント
+AppSheetではGoogleアカウントでのログインが可能です。
 ### ブラウザ
+私は「Google Chrome」というWebブラウザだけで今回のアプリを作っています。
 ## アプリ作りの手順
-### 昨日・今日・明日の3つのタブをつくる
-### 3つのタブそれぞれに、読み込むスプレッドシートを指定する
-### 細かい設定
+### AppSheetにログイン
+### アプリを新しく作成
+### アプリの画面上にタブをつくる
+### タブに、読み込むシート名を指定する
+### 読み込んだシートの表示設定
+### セーブ
 
 
 ## 自分のスマホで動くか確認
@@ -76,12 +87,6 @@ iPhoneの方は、コチラ↓から。
 Androidの方は、コチラ↓から。
 <a href='https://play.google.com/store/apps/details?id=x1Trackmaster.x1Trackmaster&hl=ja&gl=US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img width= "200" alt='Google Play で手に入れよう' src='https://play.google.com/intl/en_us/badges/static/images/badges/ja_badge_web_generic.png'/></a>
 
-### URLを開く
-AppSheetがダウンロードできた状態で、  
-以下のURLを開くと、私の作ったシフト確認アプリを実際に動かすことができます。  
-ぜひ、お試しあれ。
-
-https://www.appsheet.com/newshortcut/9739a17a-a4c5-4906-af20-cd8e5353a445
 
 <!-- ## AppSheetの良いところ
 私がAppSheetが良いなぁと感じたのは以下の3点。
