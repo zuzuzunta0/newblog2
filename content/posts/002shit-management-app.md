@@ -72,9 +72,21 @@ AppSheetではGoogleアカウントでのログインが可能です。
 ### ブラウザ
 私は「Google Chrome」というWebブラウザだけで今回のアプリを作っています。
 ## アプリ作りの手順
+
 ### AppSheetにログイン
+{{< figure src="/img/002AppSheet1.png">}}
+{{< figure src="/img/002AppSheet1.5.png">}}
+{{< figure src="/img/002AppSheet2.png">}}
+{{< figure src="/img/002AppSheet3.png">}}
 ### アプリを新しく作成
+{{< figure src="/img/002AppSheet4.png">}}
+{{< figure src="/img/002AppSheet5.png">}}
+{{< figure src="/img/002AppSheet6.png">}}
+{{< figure src="/img/002AppSheet7.png">}}
+{{< figure src="/img/002AppSheet8.png">}}
+{{< figure src="/img/002AppSheet9.png">}}
 ### アプリの画面上にタブをつくる
+{{< figure src="/img/002AppSheet11.png">}}
 ### 読み込むシート名を指定する
 ### 読み込んだシートの表示設定
 ### セーブ
