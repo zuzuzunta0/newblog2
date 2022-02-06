@@ -10,7 +10,7 @@ tags: ["AppSheet", "SpreadSheet"]
 ---
 
 <!----------------------- ↓記事設計↓ ----------------------->
-# 記事設計
+<!-- # 記事設計
 - 伝えたいこと
 - キーワード
   - AppSheet 使い方
@@ -29,10 +29,10 @@ tags: ["AppSheet", "SpreadSheet"]
   - AppSheetでアプリ作るのそんなに難しくなさそう
 - 記事にいらない情報
   - AppSheetの良いところ
-  - スプレッドシートの使い方
+  - スプレッドシートの使い方 -->
 
 <!----------------------- ↑記事設計↑ ----------------------->
-{{< figure src="/img/002eyecatch1.png">}}
+{{< figure src="/img/002eyecatch2.png">}}
 [Icons8](https://icons8.jp/)  
 <!-- 導入文⇨読者の悩み共感 -->  
 *スプレッドシートをアプリにできるツール*が無いかどうか探していたところ、  
@@ -86,12 +86,12 @@ AppSheetではGoogleアカウントでのログインが可能です。
 {{< figure src="/img/002AppSheet7.png">}}
 selectを押すと↓のような待機画面になり...
 {{< figure src="/img/002AppSheet9.png">}}
-アプリ作りの管理画面が表示されました。↓  
-これで、アプリ作りを始めることができます。
-{{< figure src="/img/002AppSheet11.png">}}
+アプリがの自動生成が完了しました。↓  
+Start Customizingをクリックすると、アプリ作りを始めることができます。
+{{< figure src="/img/002AppSheet13.png">}}
 ### 実際のアプリ作りの流れ
 {{< list "読み込むシート名を指定する" "アプリの画面上にタブをつくる" "読み込んだシートの表示設定" "セーブ" >}}
-
+{{< youtube "4natTVc1RD4" >}}
 
 ## 自分のスマホで動くか確認
 ### 「AppSheet」を自分のスマホにインストール  
@@ -102,21 +102,3 @@ Androidの方は、コチラ↓から。
 <a href='https://play.google.com/store/apps/details?id=x1Trackmaster.x1Trackmaster&hl=ja&gl=US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img width= "200" alt='Google Play で手に入れよう' src='https://play.google.com/intl/en_us/badges/static/images/badges/ja_badge_web_generic.png'/></a>
 
 
-<!-- ## AppSheetの良いところ
-私がAppSheetが良いなぁと感じたのは以下の3点。
-{{< list "スプレッドシートからスマホアプリが作れる" "ブラウザ上だけでアプリ作りができる" "簡単に見やすいアプリが作れる">}}
-スプレッドシートのデータを元にスマホアプリが作れるサービスだと思っていてOK。  
-個人的に「**スプレッドシートがスマホ向けに見やすくできるサービス**」って思うだけでも十分価値があると思っています。  
-### スプレッドシートからスマホアプリが作れる
-### ブラウザ上だけでアプリ作りができる
-**アプリ作りに必要なものは「ブラウザ」たった一つだけ**です。  
-めんどくさい環境構築も、構築中に起きるエラーにも向き合わなくてOK。  
-すぐにアプリ開発に取り掛かることができます。
-  
-もっと詳しい「AppSheetとは」が知りたい人がいれば{{< link url="https://smbiz.asahi.com/article/14406221" title="コチラ" >}}の記事をご覧ください。  
-### 簡単に見やすいアプリが作れる
-アプリのUIの見た目を整えて見やすくするという作業は、意外と難しいものですが、
-AppSheetでは、ボタンを押すだけで自動的に見た目を整えてくれます。
-   -->
-## まとめ
-## 参考文献
