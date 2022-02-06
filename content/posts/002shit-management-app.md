@@ -81,15 +81,16 @@ AppSheetではGoogleアカウントでのログインが可能です。
 ### アプリを新しく作成
 {{< figure src="/img/002AppSheet4.png">}}
 {{< figure src="/img/002AppSheet5.png">}}
-{{< figure src="/img/002AppSheet6.png">}}
+{{< figure src="/img/002AppSheet6.png">}}  
+↑お好きなアプリ名を入力してください
 {{< figure src="/img/002AppSheet7.png">}}
-{{< figure src="/img/002AppSheet8.png">}}
+selectを押すと↓のような待機画面になり...
 {{< figure src="/img/002AppSheet9.png">}}
-### アプリの画面上にタブをつくる
+アプリ作りの管理画面が表示されました。↓  
+これで、アプリ作りを始めることができます。
 {{< figure src="/img/002AppSheet11.png">}}
-### 読み込むシート名を指定する
-### 読み込んだシートの表示設定
-### セーブ
+### 実際のアプリ作りの流れ
+{{< list "読み込むシート名を指定する" "アプリの画面上にタブをつくる" "読み込んだシートの表示設定" "セーブ" >}}
 
 
 ## 自分のスマホで動くか確認
