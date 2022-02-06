@@ -1,8 +1,8 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
+title: "Introvert_conversation"
+date: 2021-11-27T23:02:43+09:00
 draft: true
-image:
+images:
 comments: true
 tags: ["", ""]
 ---

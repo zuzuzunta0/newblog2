@@ -1,51 +1,5 @@
 <!-- 参照URL:https://codingreflections.com/hugo-table-of-contents/ -->
-<style>
-
-  
-  nav#TableOfContents {
-  background: #a9a9b3;/*背景色*/
-  box-shadow: 0px 0px 0px 10px #a9a9b3;/*線の外側*/
-  padding: 0.5em 0.5em 0.5em 2em;/*ボックス内の余白*/
-  margin: 40px;
-  padding: 30px;
-  border: solid 3px #212020;/*線の種類 太さ 色*/
-  color: #212020;
-}
-  nav#TableOfContents li {
-    list-style-type: none;
-    margin-bottom: 10px;
-  }
-  nav#TableOfContents a {
-  text-decoration: underline;
-  }
-  nav#TableOfContents a:hover {
-  text-decoration: none;
-  }
-/* // リストマーカーのFontAwsome指定 */
-  nav#TableOfContents a::before {
-    content: '\f2fe';
-    font-family: "Font Awesome 5 Free";
-    font-weight: 1000;
-    font-size: 0.9em;
-    color: #232425(0, 0, 0);
-    margin-right: 5px;
-    text-align: center;
-  }
-.toc {
-  position: relative;
-}
-.toc-title {
-  position: absolute;
-  top: 0;
-  left: 40px;
-  color: #eee;
-  display: inline-block;
-  background-color: #232425;
-  padding: 2px 4px;
-  word-break: break-all;
-}
-</style>
 <div class="toc">
-  <span class="toc-title">目次</span>
+  <span class="toc-title">タップできるうんち</span>
   {{ .Page.TableOfContents }}
 </div>
