@@ -157,11 +157,11 @@
       box-shadow: 0px 0px 0px 10px $light-background-secondary;
     }
     & ul {
-      margin: 0;
       & li {
         margin: 0;
         & a {
-          margin: 8px 0px;
+          display: block;
+          margin: 10px 0!important;
         }
       }
     }
