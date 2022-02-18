@@ -120,10 +120,13 @@
           <div id="commento"></div>
           {{ end }}
         </div>
-        <div class="side-toc">
-          <div class="toc-header "></div>
-          <div class="toc-title">クリックできる目次</div>
-          {{ .TableOfContents }}
+        <div class="side-toc">  
+            <div class="toc-title">クリックできる目次</div>
+            {{ .TableOfContents }}
         </div>
+          <details class="top-toc">
+            <summary class="top-toc-title">タップできる目次</summary>
+            {{ .TableOfContents }}
+          </details>
       </main>
       {{ end }}
