@@ -118,11 +118,12 @@
         {{ if .Site.Params.Commento.Url }}
           <script defer src={{ .Site.Params.Commento.Url }}></script>
           <div id="commento"></div>
-        {{ end }}
-  </div>
-      <div class="side-toc">
-        <div class="toc-title">クリックできる目次</div>
+          {{ end }}
+        </div>
+        <div class="side-toc">
+          <div class="toc-header "></div>
+          <div class="toc-title">クリックできる目次</div>
           {{ .TableOfContents }}
-      </div>
-</main>
-{{ end }}
+        </div>
+      </main>
+      {{ end }}

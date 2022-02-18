@@ -2,15 +2,13 @@
   width: 100%;
   max-width: 1200px;
   text-align: left;
-  padding: 20px;
-  margin: 20px auto;
+  padding: 0;
+  margin: 0 auto;
   display: flex;
   @media #{$media-size-tablet} {
-    max-width: 100%;
+    flex-direction: column;
   }
-  @media #{$media-size-tablet} {
-    max-width: 100%;
-  }
+
 
   &-date {
     &:after {
@@ -100,71 +98,36 @@
     margin: 0 5px;
   }
 }
+
+.main-inner {
+  max-width: 100%;
+  padding: 20px;
+  @media #{$media-size-tablet} {
+    order: 2;
+  }
+}
 /*===========================
-目次
+↓↓↓↓↓↓目次↓↓↓↓↓↓
 ============================*/
 .side-toc {
   height: 100%;  /*position:stickyを使うためにdiv要素の高さ指定*/
   position: sticky;
-  top: 50px;
+  top: 0px;
   margin-top: 50px;
   @media #{$media-size-tablet} {
-    display: none;
-  }
-  @media #{$media-size-phone} {
-    display: none;
-  }
-}
-
-nav#TableOfContents {
-  position: relative;
-  top: 0px;
-  width: 300px;
-  font-size: 14px;
-  font-weight: bold;
-  background: #a9a9b3;/*背景色*/
-  box-shadow: 0px 0px 0px 10px #a9a9b3;/*線の外側*/
-  padding: 2em 0.5em 0.5em 0.5em;/*ボックス内の余白*/
-  margin: 20px;
-  border: solid 3px #212020;/*線の種類 太さ 色*/
-  color: #212020;
-  @media (prefers-color-scheme:light){
-    background-color: $light-background-secondary;
-    box-shadow: 0px 0px 0px 10px $light-background-secondary;
+    order: 1;
+    top: 0;
+    margin: 0;
   }
 }
 
-nav#TableOfContents li {
-    list-style-type: none;
-    margin-bottom: 10px;
+@media #{$media-size-tablet} { //タブレット・スマホ用目次ヘッダー
+  .toc-header {
+    width: 100vw;
+    height: 70px;
+    background-color:red;
   }
-  nav#TableOfContents ul {
-    margin-left: 20px;
-    & li a.active {
-      color: $dark-color;
-      background-color: $dark-background;
-    }
-  }
-  nav#TableOfContents li ul{
-    margin-top: 5px;
-  }
-
-  nav#TableOfContents a {
-  text-decoration: none;
-  }
-  nav#TableOfContents a:hover {
-  text-decoration: underline;
-  }
-/* // リストマーカーのFontAwsome指定 */
-  nav#TableOfContents a::before {
-    content: '\f2fe';
-    font-family: "Font Awesome 5 Free";
-    font-weight: 1000;
-    font-size: 0.9em;
-    color: #232425(0, 0, 0);
-    margin-right: 5px;
-    text-align: center;
-  }
+}
 
 .toc-title {
   position: absolute;
@@ -176,6 +139,66 @@ nav#TableOfContents li {
   background-color: #232425;
   word-break: break-all;
 }
+
+nav#TableOfContents {
+  position: relative;
+  top: 0px;
+  width: 300px;
+  font-size: 14px;
+  background: #a9a9b3;/*背景色*/
+  box-shadow: 0px 0px 0px 10px #a9a9b3;/*線の外側*/
+  padding: 2em 0.5em 0.5em 0.5em;/*ボックス内の余白*/
+  margin: 20px;
+  border: solid 3px #212020;/*線の種類 太さ 色*/
+  color: #212020;
+  @media (prefers-color-scheme:light){
+    background-color: $light-background-secondary;
+    box-shadow: 0px 0px 0px 10px $light-background-secondary;
+  }
+  & a {
+    text-decoration: none;
+  }
+  & ul{
+    margin-left: 20px;
+    & li a.active {
+      color: $dark-color;
+      background-color: $dark-background;
+    }
+    & li a:hover {
+      color: $dark-color;
+      background-color: $dark-background-secondary;
+    }
+    & li {
+      font-weight: bold;
+      list-style-type: none;
+      margin-bottom: 10px;
+      & ul {
+        margin-top: 5px;
+      }
+    }
+  } 
+}
+/* // リストマーカーのFontAwsome指定 */
+  nav#TableOfContents a::before {
+    content: '\f2fe';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 1000;
+    font-size: 0.9em;
+    color: #232425(0, 0, 0);
+    margin-right: 5px;
+    text-align: center;
+  }
+
+//========タブレット以下のレイアウト
+@media #{media-size-tablet} {
+  nav#TableOfContents{
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+/*==================================
+↑↑↑↑↑↑目次↑↑↑↑↑↑
+==================================*/
 
 .pagination {
   margin-top: 20px;
