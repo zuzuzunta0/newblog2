@@ -43,3 +43,14 @@ function activateIndex(element) {
   );
   newActiveIndex.classList.add("active");
 }
+
+//タブレット以下の時だけ,目次をクリックすると目次が閉じる処理
+
+//TableOfContentsのIDを呼び込む
+const details = document.querySelectorAll(".top-toc");
+const toc = document.getElementById("TableOfContents");
+//addEventListenerでTableOfContentsをクリックした時
+toc.addEventListener("click", function(){
+  details.open = false ;
+});
+//toggleでTableOfContentsのopen属性切り替え
