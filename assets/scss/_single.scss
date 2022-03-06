@@ -120,7 +120,6 @@
 }
 
 
-
 .top-toc {//タブレット以下用の目次
   display: none;// PC画面の時、折りたためる目次表示させない
   @media #{$media-size-tablet} {
