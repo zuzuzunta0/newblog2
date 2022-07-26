@@ -36,28 +36,35 @@ g = 'git'
 
 ### 現状のエイリアスリスト  
 ```
-co = checkout    ## `g co ブランチ名`で指定したブランチに移動   
-cob = checkout -b ## `g cob ブランチ名`で新しいブランチを作成してそのブランチに移動
-br = branch  ## `g br`で現在あるブランチ一覧を表示
-brd = branch -d  ## `g brd ブランチ名`で指定したブランチがマージ済であれば削除
-brdd = branch -D  ## `g brdd ブランチ名`で指定したブランチを強制的に削除
-d = diff  ## `g d`
-st = status  
+co = checkout                 ## `g co ブランチ名` 指定したブランチに移動   
+cob = checkout -b             ## `g cob ブランチ名` 新しいブランチを作成してそのブランチに移動
+br = branch                   ## `g br` 現在あるブランチ一覧を表示
+brd = branch -d               ## `g brd ブランチ名` 指定したブランチがマージ済であれば削除
+brdd = branch -D              ## `g brdd ブランチ名` 指定したブランチを強制的に削除
+d = diff                      ## `g d` 現在のワークツリーとインデックスの差分を表示
+st = status                   ## `g st` 
 com = commit  
 pl = !git pull origin `git rev-parse --abbrev-ref HEAD`  
 ps = !git push origin `git rev-parse --abbrev-ref HEAD`  
 ```
 
-## git運用で使いそうなコマンド一覧
-git branch --merged                    # マージ済みブランチの一覧  
-git branch -d                          # マージ済みブランチの削除  
-git branch -D                          # 強制的なブランチの削除  
+g st の項目  
+| Changes to be committed |	コミットする予定の変更したファイル（インデックスに反映されているファイル） |  
+| Changes not staged for commit	| まだインデックスに追加されていない、変更したファイル |  
+|Untracked files | Git でまだ管理されていないファイル（新しく追加したファイル） |
 
 ## tcardgen（サムネ画像自動作成ツール）使い方
 (https://michimani.net/post/development-generate-ogp-image-by-tcardgen-in-hugo/)  
 
 以下ターミナルへ  
-tcardgen --fontDir=static/fonts/Kinto_Sans  --output=static/ogp --template=static/img/tcardgen_template.png content/posts/004HowToWatchPLL.md  
+```
+tcardgen 
+--fontDir=static/fonts/Kinto_Sans  
+--output=static/ogp 
+--template=static/img/tcardgen_template.png 
+content/posts/004HowToWatchPLL.md  
+```
+
 <!-- tcardgen --fontDir=自動生成する画像に使うフォントのディレクトリのパス 
               --output=画像を自動生成した時の出力先ディレクトリ 
               --template=自動生成する前の背景テンプレート画像のファイルパス 
