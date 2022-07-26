@@ -49,9 +49,12 @@ ps = !git push origin `git rev-parse --abbrev-ref HEAD`
 ```
 
 g st の項目  
-| Changes to be committed |	コミットする予定の変更したファイル（インデックスに反映されているファイル） |  
-| Changes not staged for commit	| まだインデックスに追加されていない、変更したファイル |  
-|Untracked files | Git でまだ管理されていないファイル（新しく追加したファイル） |
+| ログ名                           | 意味                                    |
+| ----------------------------- | ------------------------------------- |
+| Changes to be committed       | コミットする予定の変更したファイル（インデックスに反映されているファイル） |
+| Changes not staged for commit | まだインデックスに追加されていない、変更したファイル            |
+| Untracked files               | Git でまだ管理されていないファイル（新しく追加したファイル）      |  
+
 
 ## tcardgen（サムネ画像自動作成ツール）使い方
 (https://michimani.net/post/development-generate-ogp-image-by-tcardgen-in-hugo/)  
@@ -64,11 +67,13 @@ tcardgen
 --template=static/img/tcardgen_template.png 
 content/posts/004HowToWatchPLL.md  
 ```
-
-<!-- tcardgen --fontDir=自動生成する画像に使うフォントのディレクトリのパス 
-              --output=画像を自動生成した時の出力先ディレクトリ 
-              --template=自動生成する前の背景テンプレート画像のファイルパス 
-              タイトルやタグの情報を取得する記事のファイルパス -->
+```
+tcardgen 
+--fontDir=自動生成する画像に使うフォントのディレクトリのパス 
+--output=画像を自動生成した時の出力先ディレクトリ 
+--template=自動生成する前の背景テンプレート画像のファイルパス 
+タイトルやタグの情報を取得する記事のファイルパス
+```
 
 ## 便利なショートカット
 選択範囲のブロックコメント化:(MacOS) Shift + option + a  
