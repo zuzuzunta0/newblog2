@@ -55,6 +55,14 @@ g st の項目
 | Changes not staged for commit | まだインデックスに追加されていない、変更したファイル            |
 | Untracked files               | Git でまだ管理されていないファイル（新しく追加したファイル）      |  
 
+<<<<<<< HEAD
+=======
+## 作業したコミットを元に戻したいとき
+`git log --oneline`  コミットログを一行ごとに表示
+`git reset --hard ハッシュ値` もどしたいハッシュ値を最後に追加して実行
+
+## ブログの記事更新時・新機能作成途中の
+>>>>>>> origin/master
 
 ## tcardgen（サムネ画像自動作成ツール）使い方
 (https://michimani.net/post/development-generate-ogp-image-by-tcardgen-in-hugo/)  
