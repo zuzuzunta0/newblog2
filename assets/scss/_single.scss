@@ -44,12 +44,18 @@
   }
 
   &-cover {
+    position: relative;
     border-radius: 8px;
     margin: 40px -50px;
     width: $max-width;
     max-width: $max-width;
     @media #{$media-size-tablet} {
       margin: 20px 0;
+      width: 100%;
+    }
+    &-img {
+      object-fit: contain;
+      position: absolute;
       width: 100%;
     }
   }
