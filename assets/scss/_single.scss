@@ -44,12 +44,10 @@
   }
 
   &-cover {
-    position: relative;
     border-radius: 8px;
     width: 100%;
     max-width: 100%;
     @media #{$media-size-tablet} {
-      margin: 20px 0;
       width: 100%;
     }
   }
