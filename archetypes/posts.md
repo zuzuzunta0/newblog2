@@ -5,6 +5,8 @@ draft: true
 cover: "/ogp/{{ .Name }}.png"
 ogimage: "/static/ogp/{{ .Name }}.png"
 comments: true
+author: ["zuzuzunta0"]
+categories: [""]
 tags: ["", ""]
 ---
 
