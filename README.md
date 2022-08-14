@@ -69,11 +69,28 @@ g st の項目
 
 以下ターミナルへ  
 ```
-tcardgen 
---fontDir=static/fonts/Kinto_Sans  
---output=static/ogp 
---template=static/img/tcardgen_template.png 
-content/posts/004HowToWatchPLL.md  
+zsh ogp.sh blog/content/posts/004HowToWatchPLL.md
+# ogp.sh というシェルスクリプトの中に、記事ファイルのパスを第一引数として渡して実行している。
+```
+以下ogp.shの中身
+```
+if [ $# != 1 ] || [ $1 = "" ]; then
+  echo "One parameters are required"
+  echo ""
+  echo "string: path to markdown file of target post"
+  echo ""
+  echo "example command"
+  echo "\t$ sh ./scripts/gen_ogp.sh ./content/post/test/test.md"
+  exit
+fi
+
+TARGET_POST_PATH=$1
+
+tcardgen \
+--fontDir blog/static/fonts/Kinto_Sans \
+--output blog/static/ogp \
+--template blog/static/img/tcardgen_template.png \
+$TARGET_POST_PATH
 ```
 ```
 tcardgen 
