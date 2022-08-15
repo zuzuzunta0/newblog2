@@ -2,8 +2,11 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: true
-image:
+cover: "/ogp/{{ .Name }}.png"
+ogimage: "/static/ogp/{{ .Name }}.png"
 comments: true
+author: ["zuzuzunta0"]
+categories: [""]
 tags: ["", ""]
 ---
 

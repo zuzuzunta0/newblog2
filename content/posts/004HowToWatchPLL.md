@@ -1,8 +1,9 @@
 ---
 title: "日本からPremier League Lacrosseを視聴する方法"
 date: 2022-07-14T03:49:41+09:00
-draft: true
-eyecatch: "static/ogp/004HowToWatchPLL.png"
+draft: false
+cover: "/ogp/004HowToWatchPLL.png"
+ogimage: "/static/ogp/004HowToWatchPLL.png"
 comments: true
 author: ["zuzuzunta0"]
 categories: ["lacrosse"]
@@ -15,7 +16,7 @@ tags: ["lacrosse", ""]
   <!-- 伝えたいこと -->
 
   <!-- ①掛け合わせ3つの狙うキーワード -->
-  /** PremierLacrosseLeague 日本 見る方法 **/
+  <!-- /** PremierLacrosseLeague 日本 見る方法 **/ -->
   <!-- ②読者像 -->
   
   <!-- ③読者の悩み -->
@@ -54,7 +55,7 @@ tags: ["lacrosse", ""]
    <!-- 反論への理解 -->
 
    <!-- 再度、主張 -->
-
+{{ .Params.eyecatch }}
    最初はうまくいかなかった日本に住んでいてもPremier Lacrosse League（以下PLL）の試合をフルで見たい。
 
 そんなあなたに朗報です。
