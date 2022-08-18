@@ -72,6 +72,7 @@ g st の項目
 ## tcardgen（サムネ画像自動作成ツール）使い方
 (https://michimani.net/post/development-generate-ogp-image-by-tcardgen-in-hugo/)  
 
+サムネ画像を作りたい記事のカテゴリとタグだけ入力してから
 以下ホームディレクトリでターミナルへ  
 ```
 zsh ogp.sh blog/content/posts/004HowToWatchPLL.md
