@@ -10,6 +10,11 @@
 
 エラーに対してなにをやったか記録する 
 ## Gitフロー
+### 新しく記事を作るとき
+postsの中に記事タイトルがわかるディレクトリ名(例:HowToWatchPLL)をつけてその中にindex.mdをつくる
+`hugo new posts/HowToWatchPLL/index.md`
+記事で使う画像ファイルもすべて今作ったディレクトリの中にいれていく
+
 ### 新しく作業を開始する時（リモートリポジトリからローカルリポジトリにダウンロード）
 `g pl origin master`
 ### ブログに新しく機能を追加する時
@@ -67,7 +72,7 @@ g st の項目
 ## tcardgen（サムネ画像自動作成ツール）使い方
 (https://michimani.net/post/development-generate-ogp-image-by-tcardgen-in-hugo/)  
 
-以下ターミナルへ  
+以下ホームディレクトリでターミナルへ  
 ```
 zsh ogp.sh blog/content/posts/004HowToWatchPLL.md
 # ogp.sh というシェルスクリプトの中に、記事ファイルのパスを第一引数として渡して実行している。
