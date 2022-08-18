@@ -55,7 +55,6 @@ tags: ["lacrosse", ""]
    <!-- 反論への理解 -->
 
    <!-- 再度、主張 -->
-{{ .Params.eyecatch }}
    最初はうまくいかなかった日本に住んでいてもPremier Lacrosse League（以下PLL）の試合をフルで見たい。
 
 そんなあなたに朗報です。
