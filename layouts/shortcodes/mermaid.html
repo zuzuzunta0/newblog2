@@ -1,3 +1,4 @@
-<div class="mermaid">
-  {{ .Inner }}
-  </div>
+<figure style="text-align: center;">
+  <div class="mermaid">{{ .Inner }}</div>
+  {{- with .Get "title" }}<figcaption>図: {{ . }}</figcaption>{{ end }}
+  </figure>
