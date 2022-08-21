@@ -16,7 +16,8 @@ flowchart TD
   A-->|Yes|猪木
   A-->|No|B{アントキノ?}
     B-->|Yes|猪木
-    B-->|No|END 
+    B-->|No|END  
+```mermaid  
   <!-- flowchart TD  
   A(新しく作業を始める＝git pullとブランチをきる)---->B(新しく記事を作るとき＝)  
   A---->C(新しく機能を作るとき)  
@@ -24,8 +25,6 @@ flowchart TD
   D---->E(本番環境にドッキング)  
   E---->F(ドッキングした後のファイル状態をPCにダウンロードする)  
   F---->G(ローカルのブランチを削除)  --> 
-  
-```mermaid  
 
 ### 新しく記事を作るとき
 postsの中に記事タイトルがわかるディレクトリ名(例:HowToWatchPLL)をつけてその中にindex.mdをつくる
