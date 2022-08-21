@@ -10,7 +10,6 @@
 
 エラーに対してなにをやったか記録する 
 ## Gitフロー
-{{< mermaid >}}
 graph TB
   A(新しく作業を始める＝git pullとブランチをきる)---->B(新しく記事を作るとき＝)
   A---->C(新しく機能を作るとき)
@@ -18,7 +17,6 @@ graph TB
   D---->E(本番環境にドッキング)
   E---->F(ドッキングした後のファイル状態をPCにダウンロードする)
   F---->G(ローカルのブランチを削除)
-{{< /mermaid >}}
 ### 新しく記事を作るとき
 postsの中に記事タイトルがわかるディレクトリ名(例:HowToWatchPLL)をつけてその中にindex.mdをつくる
 `hugo new posts/HowToWatchPLL/index.md`
