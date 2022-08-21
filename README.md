@@ -10,6 +10,7 @@
 
 エラーに対してなにをやったか記録する 
 ## Gitフロー
+```mermaid
 flowchart TD  
   A(新しく作業を始める＝git pullとブランチをきる)---->B(新しく記事を作るとき＝)  
   A---->C(新しく機能を作るとき)  
@@ -23,6 +24,7 @@ flowchart TD
   A-->|No|B{アントキノ?}
     B-->|Yes|猪木
     B-->|No|END 
+```mermaid
 ### 新しく記事を作るとき
 postsの中に記事タイトルがわかるディレクトリ名(例:HowToWatchPLL)をつけてその中にindex.mdをつくる
 `hugo new posts/HowToWatchPLL/index.md`
