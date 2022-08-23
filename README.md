@@ -29,14 +29,6 @@ flowchart TB
   i1 --> j["マージ済ブランチを削除"]
 ```
 
-(新しく作業を始める＝git pullとブランチをきる)---->B(新しく記事を作るとき＝)  
-  A---->C(新しく機能を作るとき)  
-  C---->D(ファイルに変更を加え終わったとき)  
-  D---->E(本番環境にドッキング)  
-  E---->F(ドッキングした後のファイル状態をPCにダウンロードする)  
-  F---->G(ローカルのブランチを削除)  
-  F---->G(ローカルのブランチを削除) 
-
 ### 新しく記事を作るとき
 postsの中に記事タイトルがわかるディレクトリ名(例:HowToWatchPLL)をつけてその中にindex.mdをつくる  
 `hugo new posts/HowToWatchPLL/HowToWatchPLL.md`  
@@ -64,18 +56,21 @@ g = 'git'
 
 ## git エイリアス
 ### vimでgitエイリアス内容確認・変更
-ホームディレクトリでターミナルに`vim ~/.gitconfig`と入力する
+ホームディレクトリでターミナルに  
+`vim ~/.gitconfig ##vimというエディタでホームディレクトリにある.gitconfigファイルを開く`  
+と入力する
 
 ### 現状のエイリアスリスト  
 ```
+add = a
 co = checkout                 ## `g co ブランチ名` 指定したブランチに移動   
 cob = checkout -b             ## `g cob ブランチ名` 新しいブランチを作成してそのブランチに移動
-br = branch                   ## `g br` 現在あるブランチ一覧を表示
+b = branch                   ## `g br` 現在あるブランチ一覧を表示
 brd = branch -d               ## `g brd ブランチ名` 指定したブランチがマージ済であれば削除
 brdd = branch -D              ## `g brdd ブランチ名` 指定したブランチを強制的に削除
 d = diff                      ## `g d` 現在のワークツリーとインデックスの差分を表示
 st = status                   ## `g st` 
-com = commit  
+cm = commit  
 pl = !git pull origin `git rev-parse --abbrev-ref HEAD`  
 ps = !git push origin `git rev-parse --abbrev-ref HEAD`  
 ```
@@ -87,14 +82,10 @@ g st の項目
 | Changes not staged for commit | まだインデックスに追加されていない、変更したファイル            |
 | Untracked files               | Git でまだ管理されていないファイル（新しく追加したファイル）      |  
 
-<<<<<<< HEAD
-=======
+
 ## 作業したコミットを元に戻したいとき
 `git log --oneline`  コミットログを一行ごとに表示
 `git reset --hard ハッシュ値` もどしたいハッシュ値を最後に追加して実行
-
-## ブログの記事更新時・新機能作成途中の
->>>>>>> origin/master
 
 ## tcardgen（サムネ画像自動作成ツール）使い方
 (https://michimani.net/post/development-generate-ogp-image-by-tcardgen-in-hugo/)  
