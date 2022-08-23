@@ -9,10 +9,29 @@
 途中で機能づくり諦めるときにブランチごと削除できるように  
 
 エラーに対してなにをやったか記録する 
-## Gitフロー
+## Gitフロー  
+```mermaid
+flowchart TB
+  subgraph 事前準備
+  a[新しく作業を始める] --> b1[git pull]
+  b1 --> e[g cob ブランチ名]
+  e --> |"新しく機能を作る"|c[新しくファイルを作る]
+  e -->|"新しく記事を作る"| d["hugo new posts/記事内容がわかるタイトル/記事内容がわかるタイトル.md"]
+  end
+  c --> f["g add"]
+  d --> f
+  f --> g["g com -m "コミットコメント""]
+  g --> h["g ps"]
+  h --> |"さらに新しくファイルに変更を加える"|f1["hugo server -Dでホットリロードしながら記事作れる"]
+  f1 --> f
+  h --> |完成したら|i["git merge"]
+  i --> i1["マージし終わったmasterブランチをgit pull でローカルにダウンロードしておく"]
+  i1 --> j["マージ済ブランチを削除"]
+```
+
 ### 新しく記事を作るとき
-postsの中に記事タイトルがわかるディレクトリ名(例:HowToWatchPLL)をつけてその中にindex.mdをつくる
-`hugo new posts/HowToWatchPLL/index.md`
+postsの中に記事タイトルがわかるディレクトリ名(例:HowToWatchPLL)をつけてその中にindex.mdをつくる  
+`hugo new posts/HowToWatchPLL/HowToWatchPLL.md`  
 記事で使う画像ファイルもすべて今作ったディレクトリの中にいれていく
 
 ### 新しく作業を開始する時（リモートリポジトリからローカルリポジトリにダウンロード）
@@ -37,18 +56,21 @@ g = 'git'
 
 ## git エイリアス
 ### vimでgitエイリアス内容確認・変更
-ホームディレクトリでターミナルに`vim ~/.gitconfig`と入力する
+ホームディレクトリでターミナルに  
+`vim ~/.gitconfig ##vimというエディタでホームディレクトリにある.gitconfigファイルを開く`  
+と入力する
 
 ### 現状のエイリアスリスト  
 ```
+add = a
 co = checkout                 ## `g co ブランチ名` 指定したブランチに移動   
 cob = checkout -b             ## `g cob ブランチ名` 新しいブランチを作成してそのブランチに移動
-br = branch                   ## `g br` 現在あるブランチ一覧を表示
+b = branch                   ## `g br` 現在あるブランチ一覧を表示
 brd = branch -d               ## `g brd ブランチ名` 指定したブランチがマージ済であれば削除
 brdd = branch -D              ## `g brdd ブランチ名` 指定したブランチを強制的に削除
 d = diff                      ## `g d` 現在のワークツリーとインデックスの差分を表示
 st = status                   ## `g st` 
-com = commit  
+cm = commit  
 pl = !git pull origin `git rev-parse --abbrev-ref HEAD`  
 ps = !git push origin `git rev-parse --abbrev-ref HEAD`  
 ```
@@ -60,14 +82,10 @@ g st の項目
 | Changes not staged for commit | まだインデックスに追加されていない、変更したファイル            |
 | Untracked files               | Git でまだ管理されていないファイル（新しく追加したファイル）      |  
 
-<<<<<<< HEAD
-=======
+
 ## 作業したコミットを元に戻したいとき
 `git log --oneline`  コミットログを一行ごとに表示
 `git reset --hard ハッシュ値` もどしたいハッシュ値を最後に追加して実行
-
-## ブログの記事更新時・新機能作成途中の
->>>>>>> origin/master
 
 ## tcardgen（サムネ画像自動作成ツール）使い方
 (https://michimani.net/post/development-generate-ogp-image-by-tcardgen-in-hugo/)  
