@@ -13,22 +13,31 @@
 ```mermaid
 flowchart TB
   subgraph 事前準備
-  a[新しく作業を始める] --> b1[git pull]
-  b1 --> e[g cob ブランチ名]
-  e --> |"新しく機能を作る"|c[新しくファイルを作る]
-  e -->|"新しく記事を作る"| d["hugo new posts/記事内容がわかるタイトル/記事内容がわかるタイトル.md"]
+  A["新しく作業を始める"] --> B["g cob これからしたい作業内容がわかる短めブランチ名"]
   end
-  c --> f["g add"]
-  d --> f
-  f --> g["g com -m "コミットコメント""]
-  g --> h["g ps"]
-  h --> |"さらに新しくファイルに変更を加える"|f1["hugo server -Dでホットリロードしながら記事作れる"]
-  f1 --> f
-  h --> |完成したら|i["GitHubブラウザでプルリクとマージを行う"]
-  i --> i1["g pl"]
-  i1 --> j["g brd"]
+  B --> D["hugo new posts/記事内容がわかるタイトル/記事内容がわかるタイトル.md"]
+  subgraph 新しく記事を作る
+  D --> D1[".mdファイルのfrontmatterのタグとカテゴリを入力する"]
+  subgraph OGP画像生成
+  D1 --> D2["ホームディレクトリで zsh ogp.sh blog/content/posts/記事内容がわかるタイトル/記事内容がわかるタイトル.md"]
+  end
+  end
+  subgraph 新しい機能を作るor編集する
+  B --> C1["blogディレクトリでファイル作るorファイルを編集する"]
+  end
+  C1 --> E
+  D2 --> E["g st #変更したいファイルだけ変更されているか確認"]
+  E --> F["g add . #カレントディレクトリ以下の変更があったファイルをステージング"]
+  F --> G["g cm -m 'なにを、どうしたか、何のために'"]
+  G --> H["g ps"]
+  H --> I{"完成した？"}
+  I --> |Yes| J["GitHubブラウザでプルリクとマージを行う"]
+  I --> |"No"| K["さらに記事内容を書く"]
+  K --> E
+  J --> L["g co master"]
+  L --> M["g pl"]
+  M --> N["g brd"]
 ```
-
 ### 新しく記事を作るとき
 postsの中に記事タイトルがわかるディレクトリ名(例:HowToWatchPLL)をつけてその中にindex.mdをつくる  
 `hugo new posts/HowToWatchPLL/HowToWatchPLL.md`  
