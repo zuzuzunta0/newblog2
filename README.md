@@ -13,15 +13,22 @@
 ```mermaid
 flowchart TB
   subgraph 事前準備
-  A["新しく作業を始める"] --> B["g cob 作業内容がわかる短めブランチ名"]
+  A["新しく作業を始める"] --> B["g cob これからしたい作業内容がわかる短めブランチ名"]
   end
-  B --> C["新しく記事を作る"]
-  C --> D["hugo new posts/記事内容がわかるタイトル/記事内容がわかるタイトル.md"]
+  B --> D["hugo new posts/記事内容がわかるタイトル/記事内容がわかるタイトル.md"]
+  subgraph 新しく記事を作る
   D --> D1[".mdファイルのfrontmatterのタグとカテゴリを入力する"]
-  D1 --> D2["zsh ogp.sh blog/content/posts/記事内容がわかるタイトル/記事内容がわかるタイトル.md"]
+  subgraph OGP画像生成
+  D1 --> D2["ホームディレクトリで zsh ogp.sh blog/content/posts/記事内容がわかるタイトル/記事内容がわかるタイトル.md"]
+  end
+  end
+  subgraph 新しい機能を作るor編集する
+  B --> C1["blogディレクトリでファイル作るorファイルを編集する"]
+  end
+  C1 --> E
   D2 --> E["g st #変更したいファイルだけ変更されているか確認"]
   E --> F["g add . #カレントディレクトリ以下の変更があったファイルをステージング"]
-  F --> G["g cm -m '何のためになにをどうしたか'"]
+  F --> G["g cm -m 'なにを、どうしたか、何のために'"]
   G --> H["g ps"]
   H --> I{"完成した？"}
   I --> |Yes| J["GitHubブラウザでプルリクとマージを行う"]
