@@ -38,21 +38,6 @@ flowchart TB
   L --> M["g pl"]
   M --> N["g brd"]
 ```
-## あ
-  新しく機能を作る"|C[新しくファイルを作る]
-  新しく記事を作る"| D["hugo new posts/記事内容がわかるタイトル/記事内容がわかるタイトル.md"]
-  K["g add"]
-  |"ファイルを編集する"|N["g st"]
-  |"記事の内容を書く"|F["g st"]
-  L
-  F
-  G["g com -m "コミットコメント""]
-  H["g ps"]
-  |"さらに新しくファイルに変更を加える"|L["hugo server -Dでホットリロードしながら記事作れる"]
-  F
-  |完成したら|I["GitHubブラウザでプルリクとマージを行う"]
-  M["g pl"]
-  J["g brd"]
 ### 新しく記事を作るとき
 postsの中に記事タイトルがわかるディレクトリ名(例:HowToWatchPLL)をつけてその中にindex.mdをつくる  
 `hugo new posts/HowToWatchPLL/HowToWatchPLL.md`  
