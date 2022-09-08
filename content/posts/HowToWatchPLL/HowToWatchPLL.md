@@ -1,7 +1,7 @@
 ---
 title: "日本からPremier League Lacrosseを視聴する方法"
 date: 2022-08-25T15:21:51+09:00
-draft: true
+draft: false
 cover: "/ogp/HowToWatchPLL.png"
 ogimage: "/static/ogp/HowToWatchPLL.png"
 comments: true
