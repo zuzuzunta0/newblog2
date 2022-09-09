@@ -73,7 +73,9 @@ VPNサービスとは、インターネット接続の国を変更できるサ�
 フランスに繋がるVPNサービスなら何でもOK。
 筆者はNord VPNを使っています。
 有料ですが、信頼できるVPNサービスです。  
-{{< inner >}}<amp-ad width="250" height="250" type="a8" data-aid="220909482153" data-wid="001" data-eno="01" data-mid="s00000018459001037000" data-mat="3NIUUI-2J3CC2-3YFI-669JL" data-type="static"></amp-ad>{{< /inner >}}
+{{< inner >}}<a href="https://px.a8.net/svt/ejp?a8mat=3NIUUI+2J3CC2+3YFI+669JL" rel="nofollow">
+<img border="0" width="250" height="250" alt="" src="https://www29.a8.net/svt/bgt?aid=220909482153&wid=001&eno=01&mid=s00000018459001037000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=3NIUUI+2J3CC2+3YFI+669JL" alt="">{{< /inner >}}
 ## VPNでフランスに接続する
 フランスが良い理由は次で説明します。
 ## ESPN Playerにアクセスして契約する
