@@ -50,17 +50,13 @@ tags: ["ラクロス", "PLL"]
    だけど、どういう方法で見たらいいかわからない。
 
    そんなあなたに向けた記事です。
-   ## この記事をみると得られること
-  - 日本に住んでいてもPLLの試合（フルゲーム）を見られるようになる。  
-  実際に日本に住んでいる私が視聴することができています！！
-   ## 日本からPLLを視聴するまでの流れ
+   ## 【結論】日本からPLLを視聴するまでの流れ
   {{< mermaid title="日本からPLLを視聴する方法" >}}
   flowchart TD
     A["VPNサービスと契約する"] --> B["VPNでフランスに接続する"]
     B --> C["ESPN Playerにアクセスして契約する"]
     C --> D["PLLが見られるようになる！！！"]
   {{< /mermaid>}}
-  ESPN Player
    <!-- 具体例 -->
 
    <!-- 理由 -->
@@ -73,16 +69,18 @@ VPNサービスとは、インターネット接続の国を変更できるサ�
 フランスに繋がるVPNサービスなら何でもOK。
 筆者はNord VPNを使っています。
 有料ですが、信頼できるVPNサービスです。  
+
+この方法を使う為だけであれば、無料期間中に解約してもOKです。  
+ESPN Playerは一度登録すると、ロケーションが日本であってもコンテンツを見続けることができます。
 {{< inner >}}<a href="https://px.a8.net/svt/ejp?a8mat=3NIUUI+2J3CC2+3YFI+669JL" rel="nofollow">
 <img border="0" width="250" height="250" alt="" src="https://www29.a8.net/svt/bgt?aid=220909482153&wid=001&eno=01&mid=s00000018459001037000&mc=1"></a>
 <img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=3NIUUI+2J3CC2+3YFI+669JL" alt="">{{< /inner >}}
-## VPNでフランスに接続する
-フランスが良い理由は次で説明します。
+## 契約したVPNサービスでフランスに接続する
+ESPN Playerは日本から視聴することができない＝それ以外の国だったらOK
 ## ESPN Playerにアクセスして契約する
-- まず{{< link title="ESPN Player" url="https://www.espnplayer.com/packages" >}}にアクセスします
-- "Sign UP"をクリックします
-- 支払い方法はPayPalが使えます
-- フランスから接続しているので、住所などを入力しなくて済みます
+- まず{{< link title="ESPN Player" url="https://www.espnplayer.com/packages" >}}にアクセスします。
+- アカウントを作ります。(フランスから接続しているので、住所などを入力しなくて済みます)
+- 支払い方法はクレジットカードかPayPalが使えます。(月額約12ドル)
 ## 観たい試合の検索方法
 ESPN Playerの検索欄から、PLLのチーム名を入力すると、  
 そのチームの試合を見ることができます。  
