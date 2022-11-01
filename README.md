@@ -17,7 +17,7 @@ flowchart TB
   end
   B --> D["hugo new posts/記事内容がわかるタイトル/記事内容がわかるタイトル.md"]
   subgraph 新しく記事を作る
-  D --> D1[".mdファイルのfrontmatterのタグとカテゴリを入力する"]
+  D --> D1[".mdファイルのfrontmatterの記事タイトルタグとカテゴリを入力する"]
   subgraph OGP画像生成
   D1 --> D2["ホームディレクトリで zsh ogp.sh blog/content/posts/記事内容がわかるタイトル/記事内容がわかるタイトル.md"]
   end

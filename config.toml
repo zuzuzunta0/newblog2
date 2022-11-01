@@ -49,7 +49,6 @@ disableHugoGeneratorInject = false
       unsafe = true
 
 [taxonomies]
-  tag      = "tags"
   category = "categories"
   series   = "series"
 
