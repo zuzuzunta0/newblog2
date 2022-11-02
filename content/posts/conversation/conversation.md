@@ -1,24 +1,24 @@
 ---
-title: "内向型の会話戦略"
+title: "内向型の為の雑談術"
 date: 2022-11-02T06:13:14+09:00
 draft: false
 cover: ""
 ogimage: "/static/ogp/conversation.png"
 comments: true
 author: ["zuzuzunta0"]
-categories: ["conversation"]
-tags: ["conversation"]
+categories: ["雑談"]
+tags: ["会話"]
 ---
 
 <!----------------------- ↓記事設計↓ ----------------------->
 
 
   <!-- 伝えたいこと -->
-
+<!-- 雑談の型 -->
   <!-- ①掛け合わせ3つの狙うキーワード -->
-  雑談 内向型 
+  <!-- 雑談 内向型 組織  -->
   <!-- ②読者像 -->
-    
+  <!-- 内向型の男性 雑談が苦手 でも人の上にたつ立場になって雑談の必要性をヒシヒシと感じている -->
   <!-- ③読者の悩み -->
 
   <!-- ④悩みが解決する条件 -->
@@ -37,37 +37,54 @@ tags: ["conversation"]
 
   <!---- ↓リード文↓ ---->
    <!-- この記事を読む人の悩みに共感する -->
-  ## 雑談を使いこなしたい
+  ## 雑談が苦しい
   「雑談」これが苦手だなと思う方は、私だけではないはず。
+  しかしながらこの「雑談」の価値をすでに知っているあなたのために書きます。  
 
-  その理由は、ただ単に「雑談」をしなくても生きてこられたからである。
-  そう、内向型が最も得意とする会話は目的のある会話である。
-  それは夢を語ったり、こうすれば良いのではないかという建設的な会話である。
-  しかしながらこの「雑談」の価値をすでに知っているあなたのために書きます。
-
+  雑談ができない自分を責めなくてもいい。自然とそうなる脳の作りだからである。
+  あなたが雑談を苦手とするには理由がある。
+  その理由は、ただ単に「雑談」をしなくても生きてこられたからである。  
+  そう、内向型が最も得意とする会話は目的のある会話で、
+  それは夢を語ったり、こうすれば良いのではないかという建設的な会話である。  
+  
+  目的の無い会話は、感情を共感することが必要である。
+  しかし、他人の感情に共感することそのものが内向型人間にとっては難しいのである。
+  他人とは違う好奇心
    <!-- この記事を読むことで何を得られるか、どんな価値が生まれるか -->
-## 再現性のある雑談術
-普段でも使えるようなカンペのような役割でこの記事を使って
+## この記事は雑談時のカンペ
+普段でも使えるようなカンペのような役割でこの記事を使って欲しい。  
+人間は習慣の生き物である。  
+普段からやっていることがここ大一番で出る。  
+
+そして何事もスキルの上達には「守破離」。
    <!-- この記事の根拠または信頼性 -->
   <!---- ↑リード文↑ ---->
 
 
   <!---- ↓本文↓ ---->
    <!-- 解決策 -->
-
+## 〇〇のための雑談と考える
+  **ゴール達成のための雑談**
+  目的の無い雑談が苦手なのであれば、雑談を目的のあるものにしてしまえばいい。
    <!-- 具体例 -->
 
    <!-- 理由 -->
-なぜ
+## なぜゴール達成に雑談力が必要なのか
+認めた人間の言うことしか聞かない＝人間の性質
+
    <!-- 反論への理解 -->
 
    <!-- 再度、主張 -->
    
    
    ## 参照
-   {{< youtube -SMVyQAu8XM>}}  
+   {{< youtube -SMVyQAu8XM >}}  
+   {{< youtube 7spHk-lZOZA >}}  
    {{< inner >}}
    <a href="https://www.amazon.co.jp/%E8%B6%85%E9%9B%91%E8%AB%87%E5%8A%9B-%E4%BA%BA%E3%81%A5%E3%81%8D%E3%81%82%E3%81%84%E3%81%8C%E3%83%A9%E3%82%AF%E3%81%AB%E3%81%AA%E3%82%8B-%E8%AA%B0%E3%81%A8%E3%81%A7%E3%82%82%E4%BF%A1%E9%A0%BC%E9%96%A2%E4%BF%82%E3%81%8C%E7%AF%89%E3%81%91%E3%82%8B-%E4%BA%94%E7%99%BE%E7%94%B0%E9%81%94%E6%88%90-ebook/dp/B0831D258M?&linkCode=li3&tag=koheishimizu-22&linkId=9505c0365127558e595a37f55208f7fc&language=ja_JP&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0831D258M&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=koheishimizu-22&language=ja_JP" ></a><img src="https://ir-jp.amazon-adsystem.com/e/ir?t=koheishimizu-22&language=ja_JP&l=li3&o=9&a=B0831D258M" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+   {{< /inner >}}  
+   {{< inner >}}
+   <a href="https://www.amazon.co.jp/%E5%86%85%E5%90%91%E5%9E%8B%E3%81%AE%E7%94%9F%E3%81%8D%E6%96%B9%E6%88%A6%E7%95%A5%E2%80%95%E3%80%8C%E7%A4%BE%E4%BC%9A%E3%81%8B%E3%82%89%E5%87%BA%E3%81%A6%E3%80%81%E5%A2%83%E5%9C%B0%E3%82%92%E9%96%8B%E6%8B%93%E3%81%99%E3%82%8B%E3%80%8D%E3%81%A8%E3%81%84%E3%81%86%E7%94%9F%E3%81%8D%E6%96%B9%E6%8F%90%E6%A1%88-%E4%B8%AD%E6%9D%91%E3%81%82%E3%82%84%E3%81%88%E3%82%82%E3%82%93-ebook/dp/B07777MYZX?&linkCode=li3&tag=koheishimizu-22&linkId=1948abf3c65cabdbbfeaa357c7eae9c8&language=ja_JP&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07777MYZX&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=koheishimizu-22&language=ja_JP" ></a><img src="https://ir-jp.amazon-adsystem.com/e/ir?t=koheishimizu-22&language=ja_JP&l=li3&o=9&a=B07777MYZX" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
    {{< /inner >}}
   <!---- ↑本文↑ ---->
 
