@@ -1,7 +1,7 @@
 ---
 title: "Conversation"
 date: 2022-11-02T06:13:14+09:00
-draft: true
+draft: false
 cover: "/ogp/conversation.png"
 ogimage: "/static/ogp/conversation.png"
 comments: true
