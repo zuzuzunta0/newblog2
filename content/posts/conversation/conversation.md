@@ -1,7 +1,7 @@
 ---
 title: "内向型の為の雑談術"
 date: 2022-11-02T06:13:14+09:00
-draft: false
+draft: true
 cover: ""
 ogimage: "/static/ogp/conversation.png"
 comments: true
