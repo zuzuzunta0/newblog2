@@ -193,5 +193,5 @@ disableHugoGeneratorInject = false
   [[menu.main]]
     indetifier = "form"
     name       = "お問い合わせ"
-    url        = "form/"
+    url        = "https://forms.gle/AcD5aEADPGJYBgzZ9"
     weight     = 4
