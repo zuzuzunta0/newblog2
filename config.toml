@@ -193,5 +193,5 @@ disableHugoGeneratorInject = false
   [[menu.main]]
     indetifier = "form"
     name       = "お問い合わせ"
-    url        = "form/"
+    url        = "https://docs.google.com/forms/d/1HVPsiYUKamYkQf13VEfd5bMwOglzYxzsP16jEOAqEH8/prefill"
     weight     = 4
