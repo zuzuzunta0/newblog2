@@ -1,7 +1,7 @@
 ---
 title: "育てる力ってチームにとって大事な力だよね"
 date: 2022-11-16T22:57:19+09:00
-draft: true
+draft: false
 ogimage: "/static/ogp/DevelopIsMostImportantForTeam.png"
 comments: true
 author: ["zuzuzunta0"]

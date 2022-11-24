@@ -1,7 +1,7 @@
 ---
 title: "私はなぜ学生時代に勉強できなくなったのか"
 date: 2022-11-16T22:51:19+09:00
-draft: true
+draft: false
 cover: ""
 ogimage: "/static/ogp/studyHate.png"
 comments: true
